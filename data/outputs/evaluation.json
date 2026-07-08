@@ -1,0 +1,355 @@
+{
+  "num_queries": 15,
+  "top_k": 5,
+  "per_query": [
+    {
+      "query": "I need a family SUV under $50k, preferably electric",
+      "expected_budget": 50000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.5
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 1,
+        "niche_exposure": 0.6,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Looking for a cheap commute car around $25k",
+      "expected_budget": 25000,
+      "naive": {
+        "budget_compliance": 0.2,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 1.0
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 2,
+        "niche_exposure": 0.4,
+        "relevance": 0.8
+      }
+    },
+    {
+      "query": "Want a luxury sedan for business, budget $60k",
+      "expected_budget": 60000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.1
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 1,
+        "niche_exposure": 0.6,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Need a 7 seater family car under $50k",
+      "expected_budget": 50000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.8
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 4,
+        "niche_exposure": 0.6,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Looking for an affordable electric car for city driving",
+      "expected_budget": 30000,
+      "naive": {
+        "budget_compliance": 0.6,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.2
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 3,
+        "niche_exposure": 0.6,
+        "relevance": 0.6
+      }
+    },
+    {
+      "query": "Want a sports car for weekend fun, around $40k",
+      "expected_budget": 40000,
+      "naive": {
+        "budget_compliance": 0.8,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.0
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 4,
+        "niche_exposure": 0.8,
+        "relevance": 0.7
+      }
+    },
+    {
+      "query": "Need a reliable family car under $30k",
+      "expected_budget": 30000,
+      "naive": {
+        "budget_compliance": 0.6,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.8
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 4,
+        "niche_exposure": 0.6,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Looking for a luxury SUV, can spend up to $80k",
+      "expected_budget": 80000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.0
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 2,
+        "niche_exposure": 1.0,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Want an eco-friendly car for daily commute, $45k budget",
+      "expected_budget": 45000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.6
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 3,
+        "niche_exposure": 0.4,
+        "relevance": 0.9
+      }
+    },
+    {
+      "query": "Need a pickup truck for work and offroad, under $50k",
+      "expected_budget": 50000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.0
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 4,
+        "niche_exposure": 0.6,
+        "relevance": 0.3
+      }
+    },
+    {
+      "query": "Looking for a safe family SUV around $45k",
+      "expected_budget": 45000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.4
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 1,
+        "niche_exposure": 1.0,
+        "relevance": 0.5
+      }
+    },
+    {
+      "query": "Want a tech-loaded electric sedan, budget $50k",
+      "expected_budget": 50000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.3
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 1,
+        "niche_exposure": 0.8,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Need an affordable hybrid for family use, $30k",
+      "expected_budget": 30000,
+      "naive": {
+        "budget_compliance": 0.6,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.5
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 4,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.5
+      }
+    },
+    {
+      "query": "Looking for a premium business sedan, $55k",
+      "expected_budget": 55000,
+      "naive": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.1
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 1,
+        "niche_exposure": 0.4,
+        "relevance": 1.0
+      }
+    },
+    {
+      "query": "Want a spacious family car for road trips, under $40k",
+      "expected_budget": 40000,
+      "naive": {
+        "budget_compliance": 0.8,
+        "brand_diversity": 3,
+        "type_diversity": 2,
+        "niche_exposure": 0.0,
+        "relevance": 0.4
+      },
+      "smart": {
+        "budget_compliance": 1.0,
+        "brand_diversity": 5,
+        "type_diversity": 5,
+        "niche_exposure": 0.6,
+        "relevance": 0.6
+      }
+    }
+  ],
+  "summary": {
+    "naive": {
+      "budget_compliance": {
+        "mean": 0.84,
+        "std": 0.233,
+        "min": 0.2,
+        "max": 1.0
+      },
+      "brand_diversity": {
+        "mean": 3.0,
+        "std": 0.0,
+        "min": 3,
+        "max": 3
+      },
+      "type_diversity": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2,
+        "max": 2
+      },
+      "niche_exposure": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "relevance": {
+        "mean": 0.38,
+        "std": 0.31,
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "smart": {
+      "budget_compliance": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "brand_diversity": {
+        "mean": 4.933,
+        "std": 0.249,
+        "min": 4,
+        "max": 5
+      },
+      "type_diversity": {
+        "mean": 2.533,
+        "std": 1.36,
+        "min": 1,
+        "max": 5
+      },
+      "niche_exposure": {
+        "mean": 0.6,
+        "std": 0.242,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "relevance": {
+        "mean": 0.793,
+        "std": 0.232,
+        "min": 0.3,
+        "max": 1.0
+      }
+    }
+  },
+  "improvements_pct": {
+    "budget_compliance": 19.0,
+    "brand_diversity": 64.4,
+    "type_diversity": 26.6,
+    "niche_exposure": Infinity,
+    "relevance": 108.7
+  },
+  "catalog_stats": {
+    "total_cars": 70,
+    "mainstream_brands": 12,
+    "niche_brands": 15,
+    "total_brands": 27
+  }
+}
