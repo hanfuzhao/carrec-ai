@@ -30,7 +30,7 @@ models/*.pt
 models/*.pkl
 !models/.gitkeep
 
-notebooks/
+notebooks/*
 !notebooks/.gitkeep
 
 .pytest_cache/
