@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRec AI - Recommendations That Actually Matter</title>
+    <meta name="description" content="LLM-powered car recommendation system with responsible AI constraints.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Scanline / grain overlay for dashboard CRT feel -->
+    <div class="dashboard-overlay" aria-hidden="true"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="header-grid">
+            <div class="brand-block">
+                <div class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="24" cy="24" r="20" stroke-opacity="0.35"/>
+                        <path d="M8 24 H40" stroke-opacity="0.25"/>
+                        <path d="M24 8 V40" stroke-opacity="0.25"/>
+                        <path d="M14 24 a10 10 0 0 1 20 0" />
+                        <circle cx="24" cy="24" r="3.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1 class="brand-name">CarRec<span class="brand-accent"> AI</span></h1>
+                    <p class="brand-tagline">Recommendations That Actually Matter</p>
+                </div>
+            </div>
+            <div class="header-status" id="headerStatus">
+                <div class="status-pod">
+                    <span class="status-label">SYSTEM</span>
+                    <span class="status-value status-dot" id="systemStatus">BOOTING</span>
+                </div>
+                <div class="status-pod">
+                    <span class="status-label">CATALOG</span>
+                    <span class="status-value" id="catalogCount">--</span>
+                </div>
+                <div class="status-pod">
+                    <span class="status-label">BRANDS</span>
+                    <span class="status-value" id="brandCount">--</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-stripe" aria-hidden="true"></div>
+    </header>
+
+    <main class="main-shell">
+        <!-- ============ SEARCH / INPUT ============ -->
+        <section class="panel search-panel" id="searchPanel">
+            <div class="panel-header">
+                <span class="panel-tag">01</span>
+                <h2 class="panel-title">Query Terminal</h2>
+                <span class="panel-sub">Describe the car you need. Natural language in, ranked picks out.</span>
+            </div>
+
+            <div class="search-body">
+                <div class="query-wrap">
+                    <textarea id="queryInput" class="query-input" rows="2"
+                        placeholder="e.g. I need a family SUV under $50k, preferably electric"
+                        aria-label="Natural language car query"></textarea>
+                    <div class="query-meter" aria-hidden="true">
+                        <span class="meter-tick"></span><span class="meter-tick"></span>
+                        <span class="meter-tick"></span><span class="meter-tick"></span>
+                    </div>
+                </div>
+
+                <div class="example-chips" id="exampleChips" role="group" aria-label="Example queries">
+                    <button class="chip" data-query="I need a family SUV under $50k, preferably electric">Family EV SUV &lt; $50k</button>
+                    <button class="chip" data-query="Looking for a cheap commute car around $25k">Cheap commute ~$25k</button>
+                    <button class="chip" data-query="Want a luxury sedan for business, budget $60k">Luxury biz sedan $60k</button>
+                    <button class="chip" data-query="Need a 7 seater family car under $50k">7-seater family &lt; $50k</button>
+                    <button class="chip" data-query="Want a sports car for weekend fun, around $40k">Weekend sports ~$40k</button>
+                    <button class="chip" data-query="Looking for an affordable electric car for city driving">Affordable city EV</button>
+                </div>
+
+                <div class="control-row">
+                    <div class="mode-toggle" role="radiogroup" aria-label="Recommendation mode">
+                        <button class="mode-btn active" data-mode="smart" role="radio" aria-checked="true">
+                            <span class="mode-led"></span>
+                            <span class="mode-text">Smart</span>
+                            <span class="mode-desc">RAG + Constraints</span>
+                        </button>
+                        <button class="mode-btn" data-mode="naive" role="radio" aria-checked="false">
+                            <span class="mode-led"></span>
+                            <span class="mode-text">Naive</span>
+                            <span class="mode-desc">Popularity only</span>
+                        </button>
+                    </div>
+
+                    <button id="recommendBtn" class="ignition-btn" aria-label="Get recommendations">
+                        <span class="ignition-ring"></span>
+                        <span class="ignition-label">Get Recommendations</span>
+                    </button>
+                </div>
+
+                <div class="parsed-prefs" id="parsedPrefs" hidden>
+                    <span class="prefs-title">PARSED PREFERENCES</span>
+                    <div class="prefs-grid" id="prefsGrid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ RESULTS ============ -->
+        <section class="panel results-panel" id="resultsPanel" hidden>
+            <div class="panel-header">
+                <span class="panel-tag">02</span>
+                <h2 class="panel-title">Recommendation Readout</h2>
+                <span class="panel-sub" id="resultsSub">Awaiting query.</span>
+            </div>
+
+            <div class="metrics-bar" id="metricsBar">
+                <div class="metric-gauge" data-metric="budget_compliance">
+                    <div class="gauge-ring">
+                        <svg viewBox="0 0 80 80"><circle class="gauge-bg" cx="40" cy="40" r="34"/><circle class="gauge-fg" cx="40" cy="40" r="34"/></svg>
+                        <span class="gauge-num" id="mBudget">--</span>
+                    </div>
+                    <span class="gauge-label">Budget Compliance</span>
+                </div>
+                <div class="metric-gauge" data-metric="brand_diversity">
+                    <div class="gauge-ring">
+                        <svg viewBox="0 0 80 80"><circle class="gauge-bg" cx="40" cy="40" r="34"/><circle class="gauge-fg" cx="40" cy="40" r="34"/></svg>
+                        <span class="gauge-num" id="mDiversity">--</span>
+                    </div>
+                    <span class="gauge-label">Brand Diversity</span>
+                </div>
+                <div class="metric-gauge" data-metric="niche_exposure">
+                    <div class="gauge-ring">
+                        <svg viewBox="0 0 80 80"><circle class="gauge-bg" cx="40" cy="40" r="34"/><circle class="gauge-fg" cx="40" cy="40" r="34"/></svg>
+                        <span class="gauge-num" id="mNiche">--</span>
+                    </div>
+                    <span class="gauge-label">Niche Exposure</span>
+                </div>
+                <div class="metric-gauge" data-metric="total_candidates">
+                    <div class="gauge-ring gauge-ring--plain">
+                        <span class="gauge-num gauge-num--lg" id="mCandidates">--</span>
+                    </div>
+                    <span class="gauge-label">Candidates Scanned</span>
+                </div>
+            </div>
+
+            <div class="cards-grid" id="cardsGrid"></div>
+        </section>
+
+        <!-- ============ BEFORE / AFTER COMPARISON ============ -->
+        <section class="panel compare-panel" id="comparePanel" hidden>
+            <div class="panel-header">
+                <span class="panel-tag">03</span>
+                <h2 class="panel-title">Before / After</h2>
+                <span class="panel-sub">Naive popularity vs. Smart constrained retrieval.</span>
+            </div>
+
+            <div class="compare-actions">
+                <button id="runCompareBtn" class="ghost-btn">Run Comparison</button>
+            </div>
+
+            <div class="compare-grid" id="compareGrid">
+                <div class="compare-col compare-col--naive" id="compareNaive">
+                    <div class="compare-col-head">
+                        <span class="compare-badge compare-badge--naive">NAIVE</span>
+                        <span class="compare-col-title">Popularity Baseline</span>
+                    </div>
+                    <div class="compare-cards" id="naiveCards"></div>
+                </div>
+                <div class="compare-divider" aria-hidden="true">
+                    <span class="vs-mark">VS</span>
+                </div>
+                <div class="compare-col compare-col--smart" id="compareSmart">
+                    <div class="compare-col-head">
+                        <span class="compare-badge compare-badge--smart">SMART</span>
+                        <span class="compare-col-title">RAG + Constraints</span>
+                    </div>
+                    <div class="compare-cards" id="smartCards"></div>
+                </div>
+            </div>
+
+            <div class="compare-table-wrap" id="compareTableWrap" hidden>
+                <table class="compare-table" id="compareTable">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th class="col-naive">Naive</th>
+                            <th class="col-smart">Smart</th>
+                            <th>Delta</th>
+                        </tr>
+                    </thead>
+                    <tbody id="compareTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============ EVALUATION DASHBOARD ============ -->
+        <section class="panel eval-panel" id="evalPanel">
+            <button class="panel-collapse" id="evalToggle" aria-expanded="false" aria-controls="evalBody">
+                <span class="panel-tag">04</span>
+                <h2 class="panel-title">Evaluation Dashboard</h2>
+                <span class="panel-sub">15-query benchmark, naive vs. smart.</span>
+                <span class="collapse-icon" aria-hidden="true"></span>
+            </button>
+            <div class="panel-body" id="evalBody" hidden>
+                <div class="eval-summary" id="evalSummary"></div>
+                <div class="eval-plots">
+                    <figure class="plot-card">
+                        <figcaption>Metric Comparison</figcaption>
+                        <img id="plotMetric" alt="Metric comparison chart" />
+                    </figure>
+                    <figure class="plot-card">
+                        <figcaption>Per-Query Breakdown</figcaption>
+                        <img id="plotPerQuery" alt="Per query breakdown chart" />
+                    </figure>
+                    <figure class="plot-card">
+                        <figcaption>Fairness Distribution</figcaption>
+                        <img id="plotFairness" alt="Fairness distribution chart" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CATALOG BROWSER ============ -->
+        <section class="panel catalog-panel" id="catalogPanel">
+            <button class="panel-collapse" id="catalogToggle" aria-expanded="false" aria-controls="catalogBody">
+                <span class="panel-tag">05</span>
+                <h2 class="panel-title">Catalog Browser</h2>
+                <span class="panel-sub">Full inventory. Filter to explore.</span>
+                <span class="collapse-icon" aria-hidden="true"></span>
+            </button>
+            <div class="panel-body" id="catalogBody" hidden>
+                <div class="catalog-filters">
+                    <div class="filter-group">
+                        <label for="filterBrand">Brand</label>
+                        <select id="filterBrand" class="filter-select"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterType">Type</label>
+                        <select id="filterType" class="filter-select"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterEnergy">Energy</label>
+                        <select id="filterEnergy" class="filter-select"><option value="">All</option></select>
+                    </div>
+                    <div class="filter-group filter-group--price">
+                        <label for="filterPrice">Max Price <span id="priceLabel">$120k</span></label>
+                        <input type="range" id="filterPrice" class="filter-range" min="20000" max="120000" step="5000" value="120000">
+                    </div>
+                    <button id="applyFiltersBtn" class="ghost-btn ghost-btn--sm">Apply</button>
+                    <button id="resetFiltersBtn" class="ghost-btn ghost-btn--sm ghost-btn--dim">Reset</button>
+                </div>
+                <div class="catalog-count" id="catalogCountDisplay">--</div>
+                <div class="catalog-grid" id="catalogGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-line" aria-hidden="true"></div>
+        <div class="footer-inner">
+            <span>CarRec AI</span>
+            <span class="footer-sep">/</span>
+            <span>Responsible Recommendation Engine</span>
+            <span class="footer-sep">/</span>
+            <span id="footerMode">smart mode</span>
+        </div>
+    </footer>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay" hidden>
+        <div class="loading-rpm">
+            <svg viewBox="0 0 120 120" width="120" height="120">
+                <circle cx="60" cy="60" r="52" class="rpm-track"/>
+                <circle cx="60" cy="60" r="52" class="rpm-arc"/>
+                <line x1="60" y1="60" x2="60" y2="18" class="rpm-needle"/>
+                <circle cx="60" cy="60" r="4" class="rpm-hub"/>
+            </svg>
+            <span class="loading-text" id="loadingText">SCANNING CATALOG</span>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
