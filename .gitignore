@@ -36,3 +36,10 @@ notebooks/*
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Pitch materials are kept local, not tracked in this repo
+PITCH.md
+PITCH_SLIDES.md
+pitch_presentation.*
+scripts/build_pitch_deck.py
+.~*.pptx
