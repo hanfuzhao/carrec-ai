@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css?v=2">
+    <link rel="stylesheet" href="/static/css/style.css?v=3">
 </head>
 <body>
     <div class="dashboard-overlay" aria-hidden="true"></div>
@@ -50,32 +50,81 @@
     </header>
 
     <main class="main-shell">
-        <!-- Search / Input -->
+        <!-- Filter / Input -->
         <section class="panel search-panel" id="searchPanel">
             <div class="panel-header">
                 <span class="panel-tag">01</span>
-                <h2 class="panel-title">Query Terminal</h2>
-                <span class="panel-sub">Describe the car you need. Natural language in, ranked picks out.</span>
+                <h2 class="panel-title">Find Your Car</h2>
+                <span class="panel-sub">Pick your preferences. Smart ranking does the rest.</span>
             </div>
 
-            <div class="search-body">
-                <div class="query-wrap">
-                    <textarea id="queryInput" class="query-input" rows="2"
-                        placeholder="e.g. I need a family SUV under $50k, preferably electric"
-                        aria-label="Natural language car query"></textarea>
-                    <div class="query-meter" aria-hidden="true">
-                        <span class="meter-tick"></span><span class="meter-tick"></span>
-                        <span class="meter-tick"></span><span class="meter-tick"></span>
+            <div class="filter-body">
+                <div class="filter-section">
+                    <label class="filter-label">Budget <span class="filter-value" id="budgetValue">$50k</span></label>
+                    <input type="range" id="budgetSlider" class="filter-slider" min="15000" max="120000" step="5000" value="50000">
+                    <div class="slider-ticks">
+                        <span>$15k</span><span>$40k</span><span>$70k</span><span>$100k</span><span>$120k</span>
                     </div>
                 </div>
 
-                <div class="example-chips" id="exampleChips" role="group" aria-label="Example queries">
-                    <button class="chip" data-query="I need a family SUV under $50k, preferably electric">Family EV SUV &lt; $50k</button>
-                    <button class="chip" data-query="Looking for a cheap commute car around $25k">Cheap commute ~$25k</button>
-                    <button class="chip" data-query="Want a luxury sedan for business, budget $60k">Luxury biz sedan $60k</button>
-                    <button class="chip" data-query="Need a 7 seater family car under $50k">7-seater family &lt; $50k</button>
-                    <button class="chip" data-query="Want a sports car for weekend fun, around $40k">Weekend sports ~$40k</button>
-                    <button class="chip" data-query="Looking for an affordable electric car for city driving">Affordable city EV</button>
+                <div class="filter-section">
+                    <label class="filter-label">Use Case</label>
+                    <div class="chip-group" id="useCaseChips" role="group">
+                        <button class="filter-chip" data-group="use_cases" data-value="family">Family</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="commute">Commute</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="business">Business</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="sport">Sport</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="eco">Eco</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="luxury">Luxury</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="offroad">Offroad</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="city">City</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="tech">Tech</button>
+                        <button class="filter-chip" data-group="use_cases" data-value="weekend">Weekend</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <label class="filter-label">Energy</label>
+                    <div class="chip-group" id="energyChips" role="group">
+                        <button class="filter-chip" data-group="energy_prefs" data-value="Gasoline">Gasoline</button>
+                        <button class="filter-chip" data-group="energy_prefs" data-value="Hybrid">Hybrid</button>
+                        <button class="filter-chip" data-group="energy_prefs" data-value="PHEV">PHEV</button>
+                        <button class="filter-chip" data-group="energy_prefs" data-value="BEV">Electric</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <label class="filter-label">Body Type</label>
+                    <div class="chip-group" id="bodyChips" role="group">
+                        <button class="filter-chip" data-group="body_prefs" data-value="Sedan">Sedan</button>
+                        <button class="filter-chip" data-group="body_prefs" data-value="SUV">SUV</button>
+                        <button class="filter-chip" data-group="body_prefs" data-value="Pickup">Pickup</button>
+                        <button class="filter-chip" data-group="body_prefs" data-value="Coupe">Coupe</button>
+                        <button class="filter-chip" data-group="body_prefs" data-value="Convertible">Convertible</button>
+                        <button class="filter-chip" data-group="body_prefs" data-value="MPV">MPV</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <label class="filter-label">Seats</label>
+                    <div class="chip-group" id="seatsChips" role="group" data-exclusive="true">
+                        <button class="filter-chip" data-group="seats" data-value="">Any</button>
+                        <button class="filter-chip" data-group="seats" data-value="5">5+</button>
+                        <button class="filter-chip" data-group="seats" data-value="7">7+</button>
+                        <button class="filter-chip" data-group="seats" data-value="8">8+</button>
+                    </div>
+                </div>
+
+                <div class="filter-section filter-section--advanced">
+                    <button class="advanced-toggle" id="advancedToggle" aria-expanded="false">
+                        <span class="advanced-icon">+</span> Natural language query (advanced)
+                    </button>
+                    <div class="advanced-body" id="advancedBody" hidden>
+                        <textarea id="queryInput" class="query-input" rows="2"
+                            placeholder="e.g. I need a family SUV under $50k, preferably electric"
+                            aria-label="Natural language car query"></textarea>
+                        <p class="advanced-hint">If filled, this overrides the filters above.</p>
+                    </div>
                 </div>
 
                 <div class="control-row">
@@ -94,12 +143,12 @@
 
                     <button id="recommendBtn" class="ignition-btn" aria-label="Get recommendations">
                         <span class="ignition-ring"></span>
-                        <span class="ignition-label">Get Recommendations</span>
+                        <span class="ignition-label">Find My Car</span>
                     </button>
                 </div>
 
                 <div class="parsed-prefs" id="parsedPrefs" hidden>
-                    <span class="prefs-title">PARSED PREFERENCES</span>
+                    <span class="prefs-title">SELECTED PREFERENCES</span>
                     <div class="prefs-grid" id="prefsGrid"></div>
                 </div>
             </div>
@@ -282,6 +331,6 @@
     <!-- Toast -->
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="/static/js/app.js?v=2"></script>
+    <script src="/static/js/app.js?v=3"></script>
 </body>
 </html>

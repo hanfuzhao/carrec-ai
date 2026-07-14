@@ -378,6 +378,135 @@ of objects with "id" and "reason" fields."""
     return recommendations
 
 
+def recommend_from_filters(filters: Dict, mode: str = "smart", top_k: int = 5) -> Dict:
+    """Recommend from structured filters instead of natural language query.
+
+    Accepts budget, use_cases, energy_prefs, body_prefs, seats_needed.
+    Builds a prefs dict directly, skipping query parsing.
+    """
+    prefs = {
+        "budget": int(filters.get("budget", 50000)),
+        "use_cases": filters.get("use_cases", []) or [],
+        "energy_prefs": filters.get("energy_prefs", []) or [],
+        "body_prefs": filters.get("body_prefs", []) or [],
+        "seats_needed": filters.get("seats_needed") or None,
+        "raw_query": _filters_to_label(filters),
+    }
+
+    if mode == "naive":
+        return _naive_from_prefs(prefs, top_k)
+
+    candidates = filter_by_budget(prefs["budget"])
+    if not candidates:
+        candidates = filter_by_budget(prefs["budget"] * 1.2)
+
+    for car in candidates:
+        car["_score"] = score_car(car, prefs)
+
+    candidates.sort(key=lambda c: c["_score"], reverse=True)
+
+    top_candidates = candidates[:min(20, len(candidates))]
+    selected = enforce_diversity(top_candidates, top_k)
+
+    niche_count = sum(1 for c in selected if c["brand"] in NICHE_BRANDS)
+    brands = list(set(c["brand"] for c in selected))
+    types = list(set(c["type"] for c in selected))
+
+    reasons = generate_reasons(selected, prefs)
+
+    result = {
+        "mode": "smart",
+        "query": prefs["raw_query"],
+        "parsed_prefs": prefs,
+        "recommendations": [
+            {
+                "id": c["id"],
+                "brand": c["brand"],
+                "model": c["model"],
+                "type": c["type"],
+                "price_usd": c["price_usd"],
+                "energy": c["energy"],
+                "seats": c["seats"],
+                "rating": c["rating"],
+                "highlights": c["highlights"],
+                "score": round(c.get("_score", 0), 2),
+                "reason": reasons.get(c["id"], ""),
+                "is_niche_brand": c["brand"] in NICHE_BRANDS,
+            }
+            for c in selected
+        ],
+        "metrics": {
+            "budget_compliance": 1.0,
+            "brand_diversity": len(brands),
+            "type_diversity": len(types),
+            "niche_exposure": niche_count / len(selected) if selected else 0,
+            "total_candidates": len(candidates),
+        },
+    }
+
+    if result["recommendations"]:
+        result["recommendations"] = llm_enhance_reasons(prefs["raw_query"], result["recommendations"])
+    return result
+
+
+def _naive_from_prefs(prefs: Dict, top_k: int = 5) -> Dict:
+    """Naive mode from structured prefs (popularity baseline)."""
+    candidates = list(CAR_CATALOG)
+    candidates.sort(key=lambda c: c["popularity"], reverse=True)
+    selected = candidates[:top_k]
+
+    niche_count = sum(1 for c in selected if c["brand"] in NICHE_BRANDS)
+    brands = list(set(c["brand"] for c in selected))
+    types = list(set(c["type"] for c in selected))
+    over_budget = sum(1 for c in selected if c["price_usd"] > prefs["budget"])
+
+    return {
+        "mode": "naive",
+        "query": prefs["raw_query"],
+        "parsed_prefs": prefs,
+        "recommendations": [
+            {
+                "id": c["id"],
+                "brand": c["brand"],
+                "model": c["model"],
+                "type": c["type"],
+                "price_usd": c["price_usd"],
+                "energy": c["energy"],
+                "seats": c["seats"],
+                "rating": c["rating"],
+                "highlights": c["highlights"],
+                "score": round(c["popularity"], 2),
+                "reason": "",
+                "is_niche_brand": c["brand"] in NICHE_BRANDS,
+            }
+            for c in selected
+        ],
+        "metrics": {
+            "budget_compliance": 1.0 - (over_budget / len(selected)) if selected else 0,
+            "brand_diversity": len(brands),
+            "type_diversity": len(types),
+            "niche_exposure": niche_count / len(selected) if selected else 0,
+            "total_candidates": len(candidates),
+        },
+    }
+
+
+def _filters_to_label(filters: Dict) -> str:
+    """Build a human-readable label from structured filters for display."""
+    parts = []
+    budget = filters.get("budget", 50000)
+    parts.append(f"budget ${budget:,}")
+    if filters.get("use_cases"):
+        parts.append(", ".join(filters["use_cases"]))
+    if filters.get("energy_prefs"):
+        parts.append("/".join(filters["energy_prefs"]))
+    if filters.get("body_prefs"):
+        parts.append("/".join(filters["body_prefs"]))
+    if filters.get("seats_needed"):
+        parts.append(f"{filters['seats_needed']}+ seats")
+    return " | ".join(parts)
+
+
 def recommend(query: str, mode: str = "smart", top_k: int = 5) -> Dict:
     """Main entry point for recommendations.
 

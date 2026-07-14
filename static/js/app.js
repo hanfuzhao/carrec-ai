@@ -31,8 +31,15 @@
         systemStatus: document.getElementById("systemStatus"),
         catalogCount: document.getElementById("catalogCount"),
         brandCount: document.getElementById("brandCount"),
+        budgetSlider: document.getElementById("budgetSlider"),
+        budgetValue: document.getElementById("budgetValue"),
+        useCaseChips: document.getElementById("useCaseChips"),
+        energyChips: document.getElementById("energyChips"),
+        bodyChips: document.getElementById("bodyChips"),
+        seatsChips: document.getElementById("seatsChips"),
+        advancedToggle: document.getElementById("advancedToggle"),
+        advancedBody: document.getElementById("advancedBody"),
         queryInput: document.getElementById("queryInput"),
-        exampleChips: document.getElementById("exampleChips"),
         modeToggle: document.querySelector(".mode-toggle"),
         recommendBtn: document.getElementById("recommendBtn"),
         parsedPrefs: document.getElementById("parsedPrefs"),
@@ -149,11 +156,21 @@
             if (!res.ok) throw new Error("stats " + res.status);
             return res.json();
         },
-        async recommend(query, mode, topK) {
+        async recommendQuery(query, mode, topK) {
             const res = await fetchWithTimeout(API.recommend, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query: query, mode: mode, top_k: topK || 5 }),
+            });
+            const data = await res.json();
+            if (!res.ok || data.error) throw new Error(data.error || "recommend failed (" + res.status + ")");
+            return data;
+        },
+        async recommendFilters(filters, mode, topK) {
+            const res = await fetchWithTimeout(API.recommend, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ filters: filters, mode: mode, top_k: topK || 5 }),
             });
             const data = await res.json();
             if (!res.ok || data.error) throw new Error(data.error || "recommend failed (" + res.status + ")");
@@ -223,16 +240,40 @@
         });
     }
 
-    /* Example chips + query input */
-    function initQueryInput() {
-        dom.exampleChips.addEventListener("click", function (e) {
-            const chip = e.target.closest(".chip");
-            if (!chip) return;
-            const q = chip.getAttribute("data-query");
-            dom.queryInput.value = q;
-            dom.queryInput.focus();
+    /* Filter chips: multi-select toggle, or exclusive for seats */
+    function initFilters() {
+        dom.budgetSlider.addEventListener("input", function () {
+            dom.budgetValue.textContent = util.formatPriceShort(Number(dom.budgetSlider.value));
         });
-        // Ctrl/Cmd + Enter to submit
+
+        function bindChipGroup(container) {
+            const exclusive = container.getAttribute("data-exclusive") === "true";
+            container.addEventListener("click", function (e) {
+                const chip = e.target.closest(".filter-chip");
+                if (!chip) return;
+                if (exclusive) {
+                    container.querySelectorAll(".filter-chip").forEach(function (c) {
+                        c.classList.remove("is-active");
+                    });
+                    chip.classList.add("is-active");
+                } else {
+                    chip.classList.toggle("is-active");
+                }
+            });
+        }
+        bindChipGroup(dom.useCaseChips);
+        bindChipGroup(dom.energyChips);
+        bindChipGroup(dom.bodyChips);
+        bindChipGroup(dom.seatsChips);
+
+        dom.seatsChips.querySelector('[data-value=""]').classList.add("is-active");
+
+        dom.advancedToggle.addEventListener("click", function () {
+            const expanded = dom.advancedToggle.getAttribute("aria-expanded") === "true";
+            dom.advancedToggle.setAttribute("aria-expanded", !expanded);
+            dom.advancedBody.hidden = expanded;
+        });
+
         dom.queryInput.addEventListener("keydown", function (e) {
             if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
                 e.preventDefault();
@@ -242,20 +283,42 @@
         dom.recommendBtn.addEventListener("click", handleRecommend);
     }
 
+    function collectFilters() {
+        const budget = Number(dom.budgetSlider.value);
+        const useCases = getActiveValues(dom.useCaseChips);
+        const energyPrefs = getActiveValues(dom.energyChips);
+        const bodyPrefs = getActiveValues(dom.bodyChips);
+        const seatsVal = getActiveValues(dom.seatsChips)[0];
+        return {
+            budget: budget,
+            use_cases: useCases,
+            energy_prefs: energyPrefs,
+            body_prefs: bodyPrefs,
+            seats_needed: seatsVal ? Number(seatsVal) : null,
+        };
+    }
+
+    function getActiveValues(container) {
+        return Array.from(container.querySelectorAll(".filter-chip.is-active"))
+            .map(function (c) { return c.getAttribute("data-value"); })
+            .filter(function (v) { return v !== ""; });
+    }
+
     async function handleRecommend() {
         const query = dom.queryInput.value.trim();
-        if (!query) {
-            showToast("Enter a query first.", true);
-            dom.queryInput.focus();
-            return;
-        }
-        state.lastQuery = query;
         showLoading("SCANNING CATALOG");
         dom.recommendBtn.disabled = true;
         try {
-            const result = await api.recommend(query, state.mode, 5);
+            let result;
+            if (query) {
+                result = await api.recommendQuery(query, state.mode, 5);
+                state.lastQuery = query;
+            } else {
+                const filters = collectFilters();
+                result = await api.recommendFilters(filters, state.mode, 5);
+                state.lastQuery = result.query || "filter-based";
+            }
             renderResults(result);
-            // reveal compare panel so user can run before/after
             dom.comparePanel.hidden = false;
         } catch (err) {
             const msg = err.name === "AbortError"
@@ -382,17 +445,17 @@
     }
 
     async function handleCompare() {
-        const query = dom.queryInput.value.trim() || state.lastQuery;
-        if (!query) {
-            showToast("Enter a query to compare.", true);
-            dom.queryInput.focus();
+        const query = dom.queryInput.value.trim();
+        const compareQuery = query || buildCompareQueryFromFilters();
+        if (!compareQuery) {
+            showToast("Set some filters or enter a query to compare.", true);
             return;
         }
-        state.lastQuery = query;
+        state.lastQuery = compareQuery;
         showLoading("RUNNING A/B TEST");
         dom.runCompareBtn.disabled = true;
         try {
-            const result = await api.compare(query, 5);
+            const result = await api.compare(compareQuery, 5);
             renderCompare(result);
         } catch (err) {
             const msg = err.name === "AbortError"
@@ -403,6 +466,25 @@
             hideLoading();
             dom.runCompareBtn.disabled = false;
         }
+    }
+
+    function buildCompareQueryFromFilters() {
+        const filters = collectFilters();
+        if (!filters.use_cases.length && !filters.energy_prefs.length &&
+            !filters.body_prefs.length && !filters.seats_needed &&
+            filters.budget === 50000) {
+            return "";
+        }
+        const parts = [];
+        parts.push("budget $" + filters.budget);
+        if (filters.use_cases.length) parts.push(filters.use_cases.join(" "));
+        if (filters.body_prefs.length) parts.push(filters.body_prefs.join(" ").toLowerCase());
+        if (filters.energy_prefs.length) {
+            const e = filters.energy_prefs.join(" ").toLowerCase();
+            parts.push(e === "bev" ? "electric" : e);
+        }
+        if (filters.seats_needed) parts.push(filters.seats_needed + " seater");
+        return parts.join(", ");
     }
 
     function buildCompareCard(rec, index, side, budget) {
@@ -679,7 +761,7 @@
     /* Init */
     function init() {
         initModeToggle();
-        initQueryInput();
+        initFilters();
         initCompare();
         initEval();
         initCatalog();
