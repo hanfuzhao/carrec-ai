@@ -9,9 +9,7 @@ Run with: python setup.py
 # (TRAE IDE, https://trae.ai). Design and implementation decisions
 # are the author's own.
 
-import json
 import os
-import subprocess
 import sys
 from pathlib import Path
 

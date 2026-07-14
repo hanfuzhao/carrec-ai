@@ -366,10 +366,12 @@ NICHE_BRANDS = {
 
 
 def get_catalog():
+    """Return the full car catalog."""
     return CAR_CATALOG
 
 
 def get_car_by_id(car_id):
+    """Find a car by its unique id. Returns None if not found."""
     for car in CAR_CATALOG:
         if car["id"] == car_id:
             return car
@@ -377,18 +379,21 @@ def get_car_by_id(car_id):
 
 
 def filter_by_budget(max_budget, catalog=None):
+    """Return cars at or below the given budget from catalog (defaults to full catalog)."""
     if catalog is None:
         catalog = CAR_CATALOG
     return [c for c in catalog if c["price_usd"] <= max_budget]
 
 
 def filter_by_use_case(use_case, catalog=None):
+    """Return cars matching the given use case from catalog (defaults to full catalog)."""
     if catalog is None:
         catalog = CAR_CATALOG
     return [c for c in catalog if use_case in c["use_cases"]]
 
 
 def get_brand_stats():
+    """Return per-brand counts and mainstream/niche classification."""
     brands = {}
     for car in CAR_CATALOG:
         b = car["brand"]
@@ -399,14 +404,10 @@ def get_brand_stats():
 
 
 def save_catalog(path):
+    """Write the catalog to a JSON file, creating directories as needed."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
         json.dump(CAR_CATALOG, f, indent=2)
-
-
-def load_catalog(path):
-    with open(path) as f:
-        return json.load(f)
 
 
 if __name__ == "__main__":

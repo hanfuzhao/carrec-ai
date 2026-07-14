@@ -36,11 +36,13 @@ app = Flask(__name__, static_folder="static", template_folder="templates")
 
 @app.route("/")
 def index():
+    """Render the main web UI."""
     return render_template("index.html")
 
 
 @app.route("/health")
 def health():
+    """Return service health and catalog size for monitoring."""
     return jsonify({
         "status": "healthy",
         "catalog_size": len(CAR_CATALOG),
@@ -50,6 +52,7 @@ def health():
 
 @app.route("/api/recommend", methods=["POST"])
 def api_recommend():
+    """Return recommendations for a natural language query in smart or naive mode."""
     data = request.get_json()
     if not data or "query" not in data:
         return jsonify({"error": "Missing 'query' field"}), 400
@@ -70,6 +73,7 @@ def api_recommend():
 
 @app.route("/api/compare", methods=["POST"])
 def api_compare():
+    """Run both naive and smart modes and return side-by-side comparison."""
     data = request.get_json()
     if not data or "query" not in data:
         return jsonify({"error": "Missing 'query' field"}), 400
@@ -86,6 +90,7 @@ def api_compare():
 
 @app.route("/api/catalog")
 def api_catalog():
+    """Browse the catalog with optional brand, type, energy, and price filters."""
     brand_filter = request.args.get("brand")
     type_filter = request.args.get("type")
     energy_filter = request.args.get("energy")
@@ -110,6 +115,7 @@ def api_catalog():
 
 @app.route("/api/stats")
 def api_stats():
+    """Return catalog statistics: brand counts, type counts, energy counts, price ranges."""
     brands = get_brand_stats()
     types = {}
     energy = {}
@@ -146,6 +152,7 @@ def api_stats():
 
 @app.route("/api/evaluation")
 def api_evaluation():
+    """Return the full evaluation results from data/outputs/evaluation.json."""
     eval_path = Path(__file__).parent / "data" / "outputs" / "evaluation.json"
     if eval_path.exists():
         with open(eval_path) as f:
@@ -155,6 +162,7 @@ def api_evaluation():
 
 @app.route("/api/plots/<path:filename>")
 def api_plots(filename):
+    """Serve evaluation plot images from data/outputs/plots/."""
     plots_dir = Path(__file__).parent / "data" / "outputs" / "plots"
     if plots_dir.exists():
         return send_from_directory(str(plots_dir), filename)
