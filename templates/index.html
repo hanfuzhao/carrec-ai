@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css?v=3">
+    <link rel="stylesheet" href="/static/css/style.css?v=4">
 </head>
 <body>
     <div class="dashboard-overlay" aria-hidden="true"></div>
@@ -61,9 +61,9 @@
             <div class="filter-body">
                 <div class="filter-section">
                     <label class="filter-label">Budget <span class="filter-value" id="budgetValue">$50k</span></label>
-                    <input type="range" id="budgetSlider" class="filter-slider" min="15000" max="120000" step="5000" value="50000">
+                    <input type="range" id="budgetSlider" class="filter-slider" min="15000" max="250000" step="5000" value="50000">
                     <div class="slider-ticks">
-                        <span>$15k</span><span>$40k</span><span>$70k</span><span>$100k</span><span>$120k</span>
+                        <span>$15k</span><span>$75k</span><span>$150k</span><span>$200k</span><span>$250k</span>
                     </div>
                 </div>
 
@@ -331,6 +331,6 @@
     <!-- Toast -->
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="/static/js/app.js?v=3"></script>
+    <script src="/static/js/app.js?v=4"></script>
 </body>
 </html>
