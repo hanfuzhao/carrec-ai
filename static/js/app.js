@@ -134,14 +134,23 @@
     }
 
     /* API layer */
+    const REQUEST_TIMEOUT_MS = 20000;
+
+    function fetchWithTimeout(url, options) {
+        const controller = new AbortController();
+        const timer = setTimeout(function () { controller.abort(); }, REQUEST_TIMEOUT_MS);
+        const opts = Object.assign({}, options, { signal: controller.signal });
+        return fetch(url, opts).finally(function () { clearTimeout(timer); });
+    }
+
     const api = {
         async getStats() {
-            const res = await fetch(API.stats);
+            const res = await fetchWithTimeout(API.stats);
             if (!res.ok) throw new Error("stats " + res.status);
             return res.json();
         },
         async recommend(query, mode, topK) {
-            const res = await fetch(API.recommend, {
+            const res = await fetchWithTimeout(API.recommend, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query: query, mode: mode, top_k: topK || 5 }),
@@ -151,7 +160,7 @@
             return data;
         },
         async compare(query, topK) {
-            const res = await fetch(API.compare, {
+            const res = await fetchWithTimeout(API.compare, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ query: query, top_k: topK || 5 }),
@@ -166,12 +175,12 @@
             if (filters.type) params.set("type", filters.type);
             if (filters.energy) params.set("energy", filters.energy);
             if (filters.max_price) params.set("max_price", filters.max_price);
-            const res = await fetch(API.catalog + "?" + params.toString());
+            const res = await fetchWithTimeout(API.catalog + "?" + params.toString());
             if (!res.ok) throw new Error("catalog " + res.status);
             return res.json();
         },
         async evaluation() {
-            const res = await fetch(API.evaluation);
+            const res = await fetchWithTimeout(API.evaluation);
             if (!res.ok) return null;
             return res.json();
         },
@@ -249,7 +258,10 @@
             // reveal compare panel so user can run before/after
             dom.comparePanel.hidden = false;
         } catch (err) {
-            showToast(err.message, true);
+            const msg = err.name === "AbortError"
+                ? "Request timed out. The server may be waking up, please try again."
+                : err.message;
+            showToast(msg, true);
         } finally {
             hideLoading();
             dom.recommendBtn.disabled = false;
@@ -383,7 +395,10 @@
             const result = await api.compare(query, 5);
             renderCompare(result);
         } catch (err) {
-            showToast(err.message, true);
+            const msg = err.name === "AbortError"
+                ? "Request timed out. The server may be waking up, please try again."
+                : err.message;
+            showToast(msg, true);
         } finally {
             hideLoading();
             dom.runCompareBtn.disabled = false;
@@ -493,7 +508,10 @@
             dom.plotPerQuery.src = api.plotUrl("per_query_breakdown.png");
             dom.plotFairness.src = api.plotUrl("fairness_distribution.png");
         } catch (err) {
-            showToast(err.message, true);
+            const msg = err.name === "AbortError"
+                ? "Request timed out. The server may be waking up, please try again."
+                : err.message;
+            showToast(msg, true);
         } finally {
             hideLoading();
         }
@@ -612,7 +630,10 @@
             const data = await api.catalog(filters);
             renderCatalog(data.cars || [], data.count);
         } catch (err) {
-            showToast(err.message, true);
+            const msg = err.name === "AbortError"
+                ? "Request timed out. The server may be waking up, please try again."
+                : err.message;
+            showToast(msg, true);
         } finally {
             hideLoading();
         }
