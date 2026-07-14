@@ -2,7 +2,7 @@
 
 Recommendations that actually matter. An LLM-powered car recommendation system that balances relevance with responsible AI constraints.
 
-Live demo: https://hanfuzhao781-carrec-ai.hf.space
+Live demo: https://carrec-ai.onrender.com
 
 ## What It Does
 
