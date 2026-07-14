@@ -30,11 +30,11 @@ When no OpenAI API key is available, the system falls back to template-based rea
 
 ## Catalog
 
-70 vehicles across 27 brands, covering sedans, SUVs, MPVs, coupes, hatchbacks, wagons, pickups, and convertibles. Price range from $23,000 to $115,000. Energy types include gasoline, hybrid, PHEV, and BEV.
+422 vehicles across 42 brands, covering sedans, SUVs, MPVs, coupes, hatchbacks, wagons, pickups, and convertibles. Price range from $16,000 to $28,000,000. Energy types include gasoline, hybrid, PHEV, and BEV.
 
-12 mainstream brands: Toyota, Honda, Tesla, BMW, Mercedes-Benz, Audi, Volkswagen, Ford, Chevrolet, Hyundai, Kia, Nissan.
+19 mainstream brands: Toyota, Honda, Tesla, BMW, Mercedes-Benz, Audi, Volkswagen, Ford, Chevrolet, Hyundai, Kia, Nissan, Acura, Infiniti, Lincoln, Cadillac.
 
-15 niche brands: BYD, NIO, Xpeng, Li Auto, Polestar, Rivian, Lucid, Genesis, Mini, Subaru, Mazda, Volvo, Porsche, Lexus, Buick.
+23 niche brands: BYD, NIO, Xpeng, Li Auto, Polestar, Rivian, Lucid, Genesis, Mini, Subaru, Mazda, Volvo, Porsche, Lexus, Buick, Land Rover, Jaguar, Ferrari, Lamborghini, McLaren, Aston Martin, Maserati, Bentley, Rolls-Royce, VinFast, Fisker.
 
 ## Evaluation Results
 
@@ -84,7 +84,7 @@ Module3_Hackathon/
 ├── Dockerfile
 ├── scripts/
 │   ├── __init__.py
-│   ├── car_data.py         # Car catalog (70 cars, 27 brands)
+│   ├── car_data.py         # Car catalog (422 cars, 42 brands)
 │   ├── recommender.py      # LLM recommendation engine
 │   └── evaluator.py        # Evaluation harness
 ├── data/

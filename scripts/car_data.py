@@ -1,7 +1,7 @@
 """
 Car database for CarRec AI recommendation system.
 
-Generates a structured catalog of 70+ vehicles across brands, types,
+Generates a structured catalog of 400+ vehicles across brands, types,
 price tiers, and energy sources. Supports fairness-aware recommendations
 by including both mainstream and niche brands.
 """
