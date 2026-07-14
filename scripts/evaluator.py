@@ -27,7 +27,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from scripts.recommender import compare_modes, naive_recommend, smart_recommend
+from scripts.recommender import naive_recommend, smart_recommend
 from scripts.car_data import CAR_CATALOG, NICHE_BRANDS, MAINSTREAM_BRANDS
 
 

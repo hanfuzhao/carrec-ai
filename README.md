@@ -119,6 +119,7 @@ Module3_Hackathon/
 | `/api/catalog` | GET | Browse catalog with filters |
 | `/api/stats` | GET | Catalog statistics |
 | `/api/evaluation` | GET | Evaluation metrics |
+| `/api/plots/<filename>` | GET | Serve evaluation plot images |
 | `/health` | GET | Health check |
 
 ## Deployment

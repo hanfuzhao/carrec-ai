@@ -17,17 +17,14 @@ Constraints handled:
 # are the author's own.
 
 import json
-import math
 import os
 import re
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from scripts.car_data import (
     CAR_CATALOG,
-    MAINSTREAM_BRANDS,
     NICHE_BRANDS,
     filter_by_budget,
-    get_car_by_id,
 )
 
 
@@ -375,8 +372,8 @@ of objects with "id" and "reason" fields."""
             if rec["id"] in reason_map:
                 rec["reason"] = reason_map[rec["id"]]
 
-    except Exception:
-        pass
+    except (ImportError, json.JSONDecodeError, KeyError, RuntimeError) as e:
+        print(f"LLM enhancement unavailable, using template reasons: {e}")
 
     return recommendations
 
