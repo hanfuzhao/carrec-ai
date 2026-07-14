@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/style.css?v=5">
+    <link rel="stylesheet" href="/static/css/style.css?v=6">
 </head>
 <body>
     <div class="dashboard-overlay" aria-hidden="true"></div>
@@ -134,6 +134,11 @@
                             <span class="mode-text">Smart</span>
                             <span class="mode-desc">RAG + Constraints</span>
                         </button>
+                        <button class="mode-btn" data-mode="classical" role="radio" aria-checked="false">
+                            <span class="mode-led"></span>
+                            <span class="mode-text">Classical</span>
+                            <span class="mode-desc">Rule-based scoring</span>
+                        </button>
                         <button class="mode-btn" data-mode="naive" role="radio" aria-checked="false">
                             <span class="mode-led"></span>
                             <span class="mode-text">Naive</span>
@@ -199,8 +204,8 @@
         <section class="panel compare-panel" id="comparePanel" hidden>
             <div class="panel-header">
                 <span class="panel-tag">03</span>
-                <h2 class="panel-title">Before / After</h2>
-                <span class="panel-sub">Naive popularity vs. Smart constrained retrieval.</span>
+                <h2 class="panel-title">Three-Model Comparison</h2>
+                <span class="panel-sub">Naive vs. Classical vs. Smart.</span>
             </div>
 
             <div class="compare-actions">
@@ -215,8 +220,12 @@
                     </div>
                     <div class="compare-cards" id="naiveCards"></div>
                 </div>
-                <div class="compare-divider" aria-hidden="true">
-                    <span class="vs-mark">VS</span>
+                <div class="compare-col compare-col--classical" id="compareClassical">
+                    <div class="compare-col-head">
+                        <span class="compare-badge compare-badge--classical">CLASSICAL</span>
+                        <span class="compare-col-title">Rule-based Scoring</span>
+                    </div>
+                    <div class="compare-cards" id="classicalCards"></div>
                 </div>
                 <div class="compare-col compare-col--smart" id="compareSmart">
                     <div class="compare-col-head">
@@ -233,8 +242,9 @@
                         <tr>
                             <th>Metric</th>
                             <th class="col-naive">Naive</th>
+                            <th class="col-classical">Classical</th>
                             <th class="col-smart">Smart</th>
-                            <th>Delta</th>
+                            <th>Delta (N→S)</th>
                         </tr>
                     </thead>
                     <tbody id="compareTableBody"></tbody>
@@ -247,7 +257,7 @@
             <button class="panel-collapse" id="evalToggle" aria-expanded="false" aria-controls="evalBody">
                 <span class="panel-tag">04</span>
                 <h2 class="panel-title">Evaluation Dashboard</h2>
-                <span class="panel-sub">15-query benchmark, naive vs. smart.</span>
+                <span class="panel-sub">15-query benchmark, naive vs. classical vs. smart.</span>
                 <span class="collapse-icon" aria-hidden="true"></span>
             </button>
             <div class="panel-body" id="evalBody" hidden>
@@ -331,6 +341,6 @@
     <!-- Toast -->
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="/static/js/app.js?v=5"></script>
+    <script src="/static/js/app.js?v=6"></script>
 </body>
 </html>

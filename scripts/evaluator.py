@@ -27,7 +27,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from scripts.recommender import naive_recommend, smart_recommend
+from scripts.recommender import naive_recommend, classical_recommend, smart_recommend
 from scripts.car_data import CAR_CATALOG, NICHE_BRANDS, MAINSTREAM_BRANDS
 
 
@@ -96,18 +96,21 @@ def compute_relevance(recommendations: List[Dict], expected_use_cases: List[str]
 
 
 def evaluate_single(query_info: Dict, top_k: int = 5) -> Dict:
-    """Evaluate both modes on a single query."""
+    """Evaluate all three modes on a single query."""
     query = query_info["query"]
     expected_budget = query_info["expected_budget"]
     expected_use_cases = query_info["expected_use_cases"]
 
     naive = naive_recommend(query, top_k)
+    classical = classical_recommend(query, top_k)
     smart = smart_recommend(query, top_k)
 
     naive_budget_ok = sum(1 for r in naive["recommendations"] if r["price_usd"] <= expected_budget)
+    classical_budget_ok = sum(1 for r in classical["recommendations"] if r["price_usd"] <= expected_budget)
     smart_budget_ok = sum(1 for r in smart["recommendations"] if r["price_usd"] <= expected_budget)
 
     naive_relevance = compute_relevance(naive["recommendations"], expected_use_cases)
+    classical_relevance = compute_relevance(classical["recommendations"], expected_use_cases)
     smart_relevance = compute_relevance(smart["recommendations"], expected_use_cases)
 
     return {
@@ -119,6 +122,13 @@ def evaluate_single(query_info: Dict, top_k: int = 5) -> Dict:
             "type_diversity": naive["metrics"]["type_diversity"],
             "niche_exposure": naive["metrics"]["niche_exposure"],
             "relevance": naive_relevance,
+        },
+        "classical": {
+            "budget_compliance": classical_budget_ok / top_k,
+            "brand_diversity": classical["metrics"]["brand_diversity"],
+            "type_diversity": classical["metrics"]["type_diversity"],
+            "niche_exposure": classical["metrics"]["niche_exposure"],
+            "relevance": classical_relevance,
         },
         "smart": {
             "budget_compliance": smart_budget_ok / top_k,
@@ -136,22 +146,16 @@ def run_evaluation(top_k: int = 5) -> Dict:
 
     metrics = ["budget_compliance", "brand_diversity", "type_diversity", "niche_exposure", "relevance"]
 
-    summary = {"naive": {}, "smart": {}}
+    summary = {"naive": {}, "classical": {}, "smart": {}}
     for metric in metrics:
-        naive_vals = [r["naive"][metric] for r in results]
-        smart_vals = [r["smart"][metric] for r in results]
-        summary["naive"][metric] = {
-            "mean": round(np.mean(naive_vals), 3),
-            "std": round(np.std(naive_vals), 3),
-            "min": round(np.min(naive_vals), 3),
-            "max": round(np.max(naive_vals), 3),
-        }
-        summary["smart"][metric] = {
-            "mean": round(np.mean(smart_vals), 3),
-            "std": round(np.std(smart_vals), 3),
-            "min": round(np.min(smart_vals), 3),
-            "max": round(np.max(smart_vals), 3),
-        }
+        for mode in ("naive", "classical", "smart"):
+            vals = [r[mode][metric] for r in results]
+            summary[mode][metric] = {
+                "mean": round(np.mean(vals), 3),
+                "std": round(np.std(vals), 3),
+                "min": round(np.min(vals), 3),
+                "max": round(np.max(vals), 3),
+            }
 
     improvements = {}
     for metric in metrics:
@@ -185,28 +189,30 @@ def plot_comparison(eval_result: Dict, output_dir: str):
     labels = ["Budget\nCompliance", "Brand\nDiversity", "Type\nDiversity", "Niche\nExposure", "Relevance"]
 
     naive_means = [eval_result["summary"]["naive"][m]["mean"] for m in metrics]
+    classical_means = [eval_result["summary"]["classical"][m]["mean"] for m in metrics]
     smart_means = [eval_result["summary"]["smart"][m]["mean"] for m in metrics]
 
     x = np.arange(len(labels))
-    width = 0.35
+    width = 0.25
 
-    fig, ax = plt.subplots(figsize=(10, 5))
-    bars1 = ax.bar(x - width/2, naive_means, width, label="Naive (Popularity)", color="#e74c3c", alpha=0.85)
-    bars2 = ax.bar(x + width/2, smart_means, width, label="Smart (RAG+Constraints)", color="#2ecc71", alpha=0.85)
+    fig, ax = plt.subplots(figsize=(11, 5))
+    bars1 = ax.bar(x - width, naive_means, width, label="Naive (Popularity)", color="#e74c3c", alpha=0.85)
+    bars2 = ax.bar(x, classical_means, width, label="Classical (Rule-based)", color="#f39c12", alpha=0.85)
+    bars3 = ax.bar(x + width, smart_means, width, label="Smart (RAG+Constraints)", color="#2ecc71", alpha=0.85)
 
     ax.set_ylabel("Score", fontsize=12)
-    ax.set_title("Recommendation Quality: Naive vs Smart", fontsize=14, fontweight="bold")
+    ax.set_title("Recommendation Quality: Naive vs Classical vs Smart", fontsize=14, fontweight="bold")
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=10)
-    ax.legend(fontsize=11)
-    ax.set_ylim(0, max(max(naive_means), max(smart_means)) * 1.3)
+    ax.legend(fontsize=10)
+    ax.set_ylim(0, max(max(naive_means), max(classical_means), max(smart_means)) * 1.3)
 
-    for bar in bars1 + bars2:
+    for bar in bars1 + bars2 + bars3:
         height = bar.get_height()
         ax.annotate(f"{height:.2f}",
                     xy=(bar.get_x() + bar.get_width() / 2, height),
                     xytext=(0, 3), textcoords="offset points",
-                    ha="center", va="bottom", fontsize=9)
+                    ha="center", va="bottom", fontsize=8)
 
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, "metric_comparison.png"), dpi=150, bbox_inches="tight")
@@ -217,12 +223,14 @@ def plot_comparison(eval_result: Dict, output_dir: str):
 
     for i, metric in enumerate(metrics):
         naive_vals = [r["naive"][metric] for r in eval_result["per_query"]]
+        classical_vals = [r["classical"][metric] for r in eval_result["per_query"]]
         smart_vals = [r["smart"][metric] for r in eval_result["per_query"]]
 
         ax = axes[i]
         x = np.arange(len(naive_vals))
-        ax.bar(x - 0.2, naive_vals, 0.4, label="Naive", color="#e74c3c", alpha=0.85)
-        ax.bar(x + 0.2, smart_vals, 0.4, label="Smart", color="#2ecc71", alpha=0.85)
+        ax.bar(x - 0.25, naive_vals, 0.25, label="Naive", color="#e74c3c", alpha=0.85)
+        ax.bar(x, classical_vals, 0.25, label="Classical", color="#f39c12", alpha=0.85)
+        ax.bar(x + 0.25, smart_vals, 0.25, label="Smart", color="#2ecc71", alpha=0.85)
         ax.set_title(metric.replace("_", " ").title(), fontsize=11)
         ax.set_xticks(x)
         ax.set_xticklabels([f"Q{i+1}" for i in range(len(naive_vals))], fontsize=8)
@@ -236,7 +244,7 @@ def plot_comparison(eval_result: Dict, output_dir: str):
                            f"Queries: {eval_result['num_queries']}",
                  fontsize=12, verticalalignment="center")
 
-    plt.suptitle("Per-Query Breakdown", fontsize=14, fontweight="bold")
+    plt.suptitle("Per-Query Breakdown (3 Models)", fontsize=14, fontweight="bold")
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, "per_query_breakdown.png"), dpi=150, bbox_inches="tight")
     plt.close()
@@ -295,6 +303,7 @@ if __name__ == "__main__":
     print("=" * 60)
     for metric in ["budget_compliance", "brand_diversity", "type_diversity", "niche_exposure", "relevance"]:
         n = result["summary"]["naive"][metric]["mean"]
+        c = result["summary"]["classical"][metric]["mean"]
         s = result["summary"]["smart"][metric]["mean"]
         imp = result["improvements_pct"][metric]
-        print(f"  {metric:25s}  naive={n:.3f}  smart={s:.3f}  improvement={imp:+.1f}%")
+        print(f"  {metric:25s}  naive={n:.3f}  classical={c:.3f}  smart={s:.3f}  improvement={imp:+.1f}%")

@@ -60,8 +60,8 @@ def api_recommend():
     mode = data.get("mode", "smart")
     top_k = min(data.get("top_k", 5), 10)
 
-    if mode not in ("smart", "naive"):
-        return jsonify({"error": "mode must be 'smart' or 'naive'"}), 400
+    if mode not in ("smart", "classical", "naive"):
+        return jsonify({"error": "mode must be 'smart', 'classical', or 'naive'"}), 400
 
     try:
         if "filters" in data and data["filters"]:

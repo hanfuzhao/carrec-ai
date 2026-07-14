@@ -55,6 +55,7 @@
         comparePanel: document.getElementById("comparePanel"),
         runCompareBtn: document.getElementById("runCompareBtn"),
         naiveCards: document.getElementById("naiveCards"),
+        classicalCards: document.getElementById("classicalCards"),
         smartCards: document.getElementById("smartCards"),
         compareTableWrap: document.getElementById("compareTableWrap"),
         compareTableBody: document.getElementById("compareTableBody"),
@@ -503,14 +504,19 @@
 
     function renderCompare(result) {
         const naive = result.naive;
+        const classical = result.classical;
         const smart = result.smart;
         const budget = (smart.parsed_prefs && smart.parsed_prefs.budget) || state.budget || 50000;
 
         const naiveRecs = naive.recommendations || [];
+        const classicalRecs = classical.recommendations || [];
         const smartRecs = smart.recommendations || [];
 
         dom.naiveCards.innerHTML = naiveRecs.length
             ? naiveRecs.map(function (r, i) { return buildCompareCard(r, i, "naive", budget); }).join("")
+            : '<p style="color:var(--text-muted);font-size:0.8rem">No results.</p>';
+        dom.classicalCards.innerHTML = classicalRecs.length
+            ? classicalRecs.map(function (r, i) { return buildCompareCard(r, i, "classical", budget); }).join("")
             : '<p style="color:var(--text-muted);font-size:0.8rem">No results.</p>';
         dom.smartCards.innerHTML = smartRecs.length
             ? smartRecs.map(function (r, i) { return buildCompareCard(r, i, "smart", budget); }).join("")
@@ -519,19 +525,21 @@
         // comparison table
         const comp = result.comparison || {};
         const rows = [
-            { name: "Budget Compliance", naive: comp.budget_compliance, smart: comp.budget_compliance, fmt: fmtPct },
-            { name: "Brand Diversity", naive: comp.brand_diversity, smart: comp.brand_diversity, fmt: fmtNum },
-            { name: "Type Diversity", naive: comp.type_diversity, smart: comp.type_diversity, fmt: fmtNum },
-            { name: "Niche Exposure", naive: comp.niche_exposure, smart: comp.niche_exposure, fmt: fmtPct },
+            { name: "Budget Compliance", naive: comp.budget_compliance && comp.budget_compliance.naive, classical: comp.budget_compliance && comp.budget_compliance.classical, smart: comp.budget_compliance && comp.budget_compliance.smart, fmt: fmtPct },
+            { name: "Brand Diversity", naive: comp.brand_diversity && comp.brand_diversity.naive, classical: comp.brand_diversity && comp.brand_diversity.classical, smart: comp.brand_diversity && comp.brand_diversity.smart, fmt: fmtNum },
+            { name: "Type Diversity", naive: comp.type_diversity && comp.type_diversity.naive, classical: comp.type_diversity && comp.type_diversity.classical, smart: comp.type_diversity && comp.type_diversity.smart, fmt: fmtNum },
+            { name: "Niche Exposure", naive: comp.niche_exposure && comp.niche_exposure.naive, classical: comp.niche_exposure && comp.niche_exposure.classical, smart: comp.niche_exposure && comp.niche_exposure.smart, fmt: fmtPct },
         ];
         dom.compareTableBody.innerHTML = rows.map(function (row) {
             const nVal = row.fmt(row.naive);
+            const cVal = row.fmt(row.classical);
             const sVal = row.fmt(row.smart);
             const delta = computeDelta(row.naive, row.smart, row.name);
             return '' +
                 '<tr>' +
                     '<td class="metric-name">' + util.escapeHtml(row.name) + '</td>' +
                     '<td class="col-naive">' + nVal + '</td>' +
+                    '<td class="col-classical">' + cVal + '</td>' +
                     '<td class="col-smart">' + sVal + '</td>' +
                     '<td class="' + delta.cls + '">' + delta.text + '</td>' +
                 '</tr>';
@@ -604,7 +612,7 @@
         const improvements = data.improvements_pct || {};
         const catStats = data.catalog_stats || {};
         const smartSum = summary.smart || {};
-        const naiveSum = summary.naive || {};
+        const classicalSum = summary.classical || {};
 
         const stats = [
             { label: "Queries Benchmarked", value: data.num_queries || 0, sub: "top_k = " + (data.top_k || 5) },
@@ -613,6 +621,8 @@
             { label: "Budget Compliance (smart)", value: pct(smartSum.budget_compliance && smartSum.budget_compliance.mean), sub: deltaImp(improvements.budget_compliance) },
             { label: "Brand Diversity (smart)", value: num(smartSum.brand_diversity && smartSum.brand_diversity.mean), sub: deltaImp(improvements.brand_diversity) },
             { label: "Niche Exposure (smart)", value: pct(smartSum.niche_exposure && smartSum.niche_exposure.mean), sub: nicheImp(improvements.niche_exposure) },
+            { label: "Relevance (classical)", value: pct(classicalSum.relevance && classicalSum.relevance.mean), sub: '<span class="up">middle layer</span>' },
+            { label: "Niche Exposure (classical)", value: pct(classicalSum.niche_exposure && classicalSum.niche_exposure.mean), sub: '<span class="up">no boost</span>' },
         ];
 
         dom.evalSummary.innerHTML = stats.map(function (s) {
