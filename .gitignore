@@ -24,7 +24,7 @@ Thumbs.db
 
 *.log
 
-data/raw/
+data/raw/*
 !data/raw/.gitkeep
 models/*.pt
 models/*.pkl

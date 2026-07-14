@@ -13,6 +13,10 @@ Metrics:
 - Relevance: average use-case match score
 """
 
+# AI Attribution: This code was developed with assistance from AI tools
+# (TRAE IDE, https://trae.ai). Design and implementation decisions
+# are the author's own.
+
 import json
 import os
 from pathlib import Path

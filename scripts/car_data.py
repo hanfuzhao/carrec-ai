@@ -6,6 +6,10 @@ price tiers, and energy sources. Supports fairness-aware recommendations
 by including both mainstream and niche brands.
 """
 
+# AI Attribution: This code was developed with assistance from AI tools
+# (TRAE IDE, https://trae.ai). Design and implementation decisions
+# are the author's own.
+
 import json
 import os
 from pathlib import Path
