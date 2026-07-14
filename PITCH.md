@@ -4,7 +4,7 @@
 
 Car recommendation platforms like Dongchedi (DongCheDi) and Edmunds optimize for engagement. They push popular models because popular models get clicks, and clicks drive ad revenue. But a first-time buyer asking for "a family SUV under $50k" does not need to see five Teslas. They need options that fit their budget, match their use case, and expose them to brands they might not have considered.
 
-The core problem with engagement-optimized recommenders is that they create feedback loops. Popular cars get more exposure, become more popular, and crowd out alternatives. Niche brands, including innovative EV makers like BYD, NIO, and Rivian, get buried even when they might be a better fit for the user.
+The core problem with engagement-optimized recommenders is that they create feedback loops. Popular cars get more exposure, become more popular, and crowd out alternatives. Niche brands, including emerging EV makers like BYD, NIO, and Rivian, get buried even when they might be a better fit for the user.
 
 ## What I Built
 
@@ -49,7 +49,7 @@ I evaluated both modes across 15 diverse test queries covering family cars, luxu
 
 ## Reflection: Risks, Ethics, and Evaluation Challenges
 
-**Risk of bias in the catalog.** My catalog of 70 cars is curated, not comprehensive. I chose which brands count as "niche" and which cars to include. A real deployment would need a much larger, continuously updated catalog, and the niche/mainstream classification should be data-driven rather than manually assigned.
+**Risk of bias in the catalog.** My catalog of 70 cars is curated, not exhaustive. I chose which brands count as "niche" and which cars to include. A real deployment would need a much larger, continuously updated catalog, and the niche/mainstream classification should be data-driven rather than manually assigned.
 
 **Fairness is not neutral.** The 1.5-point boost I give to niche brands is an explicit editorial choice. It favors newer EV brands over established Japanese sedans. This is defensible, given the goal of expanding user consideration sets, but it is a value judgment, not an objective optimization. Different stakeholders might disagree on the right boost amount.
 
@@ -65,7 +65,7 @@ I evaluated both modes across 15 diverse test queries covering family cars, luxu
 - No user accounts or history. Every session is a cold start.
 - LLM enhancement requires an OpenAI API key. Without it, reasons are templated.
 - No image support. Recommendations are text-only.
-- The niche brand classification is binary. Reality is more nuanced.
+- The niche brand classification is binary. The real market has more gradation.
 
 ## Links
 

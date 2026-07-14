@@ -81,7 +81,7 @@ Query: "I need a family SUV under $50k, preferably electric"
 
 ## Slide 7: Risks and Ethics
 
-**Catalog bias.** 70 cars is curated, not comprehensive. Niche classification is manual, should be data-driven.
+**Catalog bias.** 70 cars is curated, not exhaustive. Niche classification is manual, should be data-driven.
 
 **Fairness is editorial.** The 1.5-point niche boost is a value judgment, not objective optimization. Different stakeholders may disagree.
 
@@ -89,7 +89,7 @@ Query: "I need a family SUV under $50k, preferably electric"
 
 **LLM hallucination risk.** LLM generates reasons but does not make the decision. Structured data validates the recommendation. Production would validate LLM output against car data.
 
-> Speaker notes: Four risks are worth noting. First, catalog bias. My 70-car catalog is curated, and I chose which brands count as niche. A real system would need a larger, continuously updated catalog with data-driven classification. Second, fairness is not neutral. The 1.5-point boost for niche brands is an editorial choice. Third, there is no learning loop. Every session is a cold start with no feedback mechanism. Fourth, LLM hallucination. The LLM generates reasons but does not make the recommendation decision, which is deterministic and auditable. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against structured data.
+> Speaker notes: Four risks to consider. First, catalog bias. My 70-car catalog is curated, and I chose which brands count as niche. A real system would need a larger, continuously updated catalog with data-driven classification. Second, fairness is not neutral. The 1.5-point boost for niche brands is an editorial choice. Third, there is no learning loop. Every session is a cold start with no feedback mechanism. Fourth, LLM hallucination. The LLM generates reasons but does not make the recommendation decision, which is deterministic and auditable. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against structured data.
 
 ## Slide 8: Live Demo
 
@@ -102,7 +102,7 @@ Try queries like:
 
 GitHub: https://github.com/hanfuzhao/carrec-ai
 
-> Speaker notes: The live app is deployed on Render and accepts natural language queries. The GitHub repository contains the full codebase with PRs following git best practices.
+> Speaker notes: The live app is deployed on Render and accepts natural language queries. The GitHub repository contains the full codebase with a proper branch and PR workflow.
 
 ## Recording Guide
 
