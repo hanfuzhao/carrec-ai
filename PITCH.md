@@ -57,7 +57,7 @@ I evaluated both modes across 15 diverse test queries covering family cars, luxu
 
 **Evaluation is limited.** My relevance metric measures use-case overlap, which is a proxy for actual user satisfaction. The ideal evaluation would be A/B testing with real car buyers, which is beyond the scope of a hackathon. The 15 test queries are also my own design and may not represent the full distribution of user needs.
 
-**LLM dependency.** The LLM generates reasons but does not make the recommendation decision. This is deliberate. I wanted the constraint enforcement to be deterministic and auditable. If the LLM hallucinates a feature, the underlying recommendation is still correct. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against the structured car data before displaying it.
+**LLM dependency.** The LLM generates reasons but does not make the recommendation decision. The constraint enforcement is deterministic and auditable by design. If the LLM hallucinates a feature, the underlying recommendation is still correct. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against the structured car data before displaying it.
 
 ## Limitations
 

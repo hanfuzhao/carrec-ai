@@ -1,9 +1,7 @@
-/* ============================================================
-   CarRec AI - Automotive Dashboard Theme
-   Carbon fiber / racing gauges / amber instrument lights
-   ============================================================ */
+/* CarRec AI - Automotive Dashboard Theme
+   Carbon fiber / racing gauges / amber instrument lights */
 
-/* ---- Design Tokens ---- */
+/* Design Tokens */
 :root {
     /* Charcoal / carbon base */
     --bg-void: #07080a;
@@ -50,7 +48,7 @@
     --shadow-panel: 0 12px 40px rgba(0,0,0,0.5), 0 2px 0 rgba(255,138,0,0.05);
 }
 
-/* ---- Reset ---- */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
@@ -103,9 +101,7 @@ a { color: var(--amber-bright); }
 ::-webkit-scrollbar-thumb { background: var(--line-bright); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--amber-deep); }
 
-/* ============================================================
-   HEADER
-   ============================================================ */
+/* HEADER */
 .site-header {
     position: relative;
     background: linear-gradient(180deg, var(--bg-carbon) 0%, var(--bg-void) 100%);
@@ -217,9 +213,7 @@ a { color: var(--amber-bright); }
     box-shadow: 0 0 10px var(--amber-glow);
 }
 
-/* ============================================================
-   LAYOUT SHELL
-   ============================================================ */
+/* LAYOUT SHELL */
 .main-shell {
     max-width: 1280px;
     margin: 0 auto;
@@ -229,7 +223,7 @@ a { color: var(--amber-bright); }
     gap: 24px;
 }
 
-/* ---- Panel base ---- */
+/* Panel base */
 .panel {
     background: var(--bg-panel);
     border: 1px solid var(--line);
@@ -318,9 +312,7 @@ a { color: var(--amber-bright); }
     animation: panelOpen 0.3s ease;
 }
 
-/* ============================================================
-   SEARCH PANEL
-   ============================================================ */
+/* SEARCH PANEL */
 .search-body { padding: 22px; }
 
 .query-wrap { position: relative; }
@@ -539,9 +531,7 @@ a { color: var(--amber-bright); }
     font-weight: 500;
 }
 
-/* ============================================================
-   METRICS BAR (gauges)
-   ============================================================ */
+/* METRICS BAR (gauges) */
 .metrics-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -605,9 +595,7 @@ a { color: var(--amber-bright); }
     text-align: center;
 }
 
-/* ============================================================
-   CAR CARDS
-   ============================================================ */
+/* CAR CARDS */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -801,9 +789,7 @@ a { color: var(--amber-bright); }
     letter-spacing: 0.04em;
 }
 
-/* ============================================================
-   COMPARE PANEL
-   ============================================================ */
+/* COMPARE PANEL */
 .compare-actions { padding: 18px 22px 0; }
 .compare-grid {
     display: grid;
@@ -963,9 +949,7 @@ a { color: var(--amber-bright); }
 .compare-table .delta-neu { color: var(--text-muted); }
 .compare-table .metric-name { color: var(--text-dim); text-transform: capitalize; }
 
-/* ============================================================
-   EVALUATION PANEL
-   ============================================================ */
+/* EVALUATION PANEL */
 .eval-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1033,9 +1017,7 @@ a { color: var(--amber-bright); }
 }
 .plot-card img[src=""] { display: none; }
 
-/* ============================================================
-   CATALOG PANEL
-   ============================================================ */
+/* CATALOG PANEL */
 .catalog-filters {
     display: flex;
     flex-wrap: wrap;
@@ -1186,9 +1168,7 @@ a { color: var(--amber-bright); }
     color: var(--text-muted);
 }
 
-/* ============================================================
-   LOADING OVERLAY
-   ============================================================ */
+/* LOADING OVERLAY */
 .loading-overlay {
     position: fixed;
     inset: 0;
@@ -1238,9 +1218,7 @@ a { color: var(--amber-bright); }
     animation: textBlink 1s infinite;
 }
 
-/* ============================================================
-   TOAST
-   ============================================================ */
+/* TOAST */
 .toast {
     position: fixed;
     bottom: 28px;
@@ -1266,9 +1244,7 @@ a { color: var(--amber-bright); }
 }
 .toast.is-error { border-color: var(--signal-red); border-left-color: var(--signal-red); }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 .site-footer { margin-top: 20px; }
 .footer-line {
     height: 1px;
@@ -1289,9 +1265,7 @@ a { color: var(--amber-bright); }
 .footer-sep { color: var(--text-faint); }
 #footerMode { color: var(--amber); text-transform: uppercase; }
 
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
+/* ANIMATIONS */
 @keyframes gaugePulse {
     0%, 100% { filter: drop-shadow(0 0 6px var(--amber-glow)); }
     50% { filter: drop-shadow(0 0 14px var(--amber-glow)); }
@@ -1335,9 +1309,7 @@ a { color: var(--amber-bright); }
     50% { opacity: 0.5; }
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* RESPONSIVE */
 @media (max-width: 880px) {
     .header-grid { padding: 18px; }
     .header-status { width: 100%; justify-content: flex-start; }

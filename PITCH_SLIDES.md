@@ -1,8 +1,6 @@
-# CarRec AI - Pitch Slides
+# CarRec AI Pitch Slides
 
 Slide-by-slide content for the 5-minute video pitch. Each slide includes speaker notes.
-
----
 
 ## Slide 1: Title
 
@@ -13,9 +11,7 @@ LLM-powered car recommendation with responsible AI constraints
 GitHub: https://github.com/hanfuzhao/carrec-ai
 Live app: https://carrec-ai.onrender.com
 
-> Speaker notes: Hi, I'm presenting CarRec AI, a car recommendation system that uses an LLM to provide recommendations balancing relevance with responsibility. The live app and code are linked here.
-
----
+> Speaker notes: This is CarRec AI, a car recommendation system that uses an LLM to balance relevance with responsibility. The live app and source code are linked on this slide.
 
 ## Slide 2: The Problem
 
@@ -28,9 +24,7 @@ Car platforms like Dongchedi and Edmunds optimize for clicks, not outcomes.
 
 Engagement optimization creates feedback loops that narrow user choice.
 
-> Speaker notes: The core problem with engagement-optimized recommenders is that they create feedback loops. Popular cars get more exposure, become more popular, and crowd out alternatives. A first-time buyer asking for a family SUV does not need to see five Teslas. They need options that fit their budget and expose them to brands they might not have considered.
-
----
+> Speaker notes: Engagement-optimized recommenders create feedback loops. Popular cars get more exposure, become more popular, and crowd out alternatives. A first-time buyer asking for a family SUV does not need to see five Teslas. They need options that fit their budget and expose them to brands they might not have considered.
 
 ## Slide 3: What I Built
 
@@ -43,9 +37,7 @@ Four real-world constraints enforced:
 3. Fairness - scoring boost for niche brands
 4. Cold start - preference parsing from natural language, zero user history
 
-> Speaker notes: I built a car recommendation system using GPT-4o-mini from OpenAI. I adapted the model to the car recommendation domain through prompt engineering and retrieval-augmented generation, which functions as fine-tuning without modifying weights. The system enforces four real-world constraints: budget compliance as a hard filter, brand diversity through greedy selection, fairness via a scoring boost for niche brands, and cold start handling by parsing preferences from the query itself with zero user history.
-
----
+> Speaker notes: I built a car recommendation system using GPT-4o-mini from OpenAI, adapted to the car domain through prompt engineering and retrieval-augmented generation. The system enforces four real-world constraints: budget compliance as a hard filter, brand diversity through greedy selection, fairness via a scoring boost for niche brands, and cold start handling by parsing preferences from the query itself with zero user history.
 
 ## Slide 4: LLM Strategy
 
@@ -59,9 +51,7 @@ Three-layer architecture:
 
 Falls back to template reasons without API key. Correctness never depends on the LLM.
 
-> Speaker notes: The strategy has three layers. First, structured retrieval: the LLM never sees the raw query alone. The system parses it to extract budget, use cases, and preferences, then filters a catalog of 70 cars. Only relevant candidates are passed forward. Second, constraint-aware scoring: each car is scored on use-case match, preference alignment, budget utilization, and a fairness boost for niche brands. A diversity-aware selection ensures variety. Third, LLM reasoning: GPT-4o-mini generates a personalized reason for each recommendation. Importantly, when no API key is available, the system falls back to templates and still produces correct recommendations. The LLM enhances the experience but is not a dependency for correctness.
-
----
+> Speaker notes: The strategy has three layers. First, structured retrieval. The LLM never sees the raw query alone. The system parses it to extract budget, use cases, and preferences, then filters a catalog of 70 cars. Only relevant candidates move forward. Second, constraint-aware scoring. Each car is scored on use-case match, preference alignment, budget utilization, and a fairness boost for niche brands. A diversity-aware selection ensures variety. Third, LLM reasoning. GPT-4o-mini generates a personalized reason for each recommendation. When no API key is available, the system falls back to templates and still produces correct recommendations. The LLM enhances the experience but is not a dependency for correctness.
 
 ## Slide 5: Before/After Comparison
 
@@ -75,9 +65,7 @@ Falls back to template reasons without API key. Correctness never depends on the
 | Niche exposure | 0% | 60% | from zero |
 | Relevance | 0.38 | 0.79 | +109% |
 
-> Speaker notes: I evaluated both modes across 15 diverse test queries. The naive mode, which just sorts by popularity, achieved 84% budget compliance, meaning 16% of recommendations exceeded the user's budget. Brand diversity was stuck at 3, and niche brand exposure was zero. The smart mode achieved 100% budget compliance, increased brand diversity to nearly 5 unique brands per query, and brought niche exposure from zero to 60%. Relevance more than doubled from 0.38 to 0.79.
-
----
+> Speaker notes: I evaluated both modes across 15 test queries. The naive mode, which sorts by popularity, achieved 84 percent budget compliance, meaning 16 percent of recommendations exceeded the user's budget. Brand diversity was stuck at 3, and niche brand exposure was zero. The smart mode achieved 100 percent budget compliance, increased brand diversity to nearly 5 unique brands per query, and brought niche exposure from zero to 60 percent. Relevance more than doubled from 0.38 to 0.79.
 
 ## Slide 6: Example Query
 
@@ -89,9 +77,7 @@ Query: "I need a family SUV under $50k, preferably electric"
 **After (smart):** BYD Atto 3 ($28k), NIO ES6 ($42k), Volvo XC40 Recharge ($42k), VW ID.4 ($39k), Hyundai Ioniq 5 ($42k)
 - All within budget, all electric SUVs, 3 niche brands exposed
 
-> Speaker notes: Here is a concrete example. For the query "family SUV under 50k, preferably electric," the naive mode returns the five most popular cars overall. Two exceed the budget, none are electric SUVs, and all are mainstream brands. The smart mode returns five electric SUVs, all within budget, from three niche brands that the user might not have considered otherwise.
-
----
+> Speaker notes: For the query "family SUV under 50k, preferably electric," the naive mode returns the five most popular cars overall. Two exceed the budget, none are electric SUVs, and all are mainstream brands. The smart mode returns five electric SUVs, all within budget, from three niche brands that the user might not have considered otherwise.
 
 ## Slide 7: Risks and Ethics
 
@@ -103,9 +89,7 @@ Query: "I need a family SUV under $50k, preferably electric"
 
 **LLM hallucination risk.** LLM generates reasons but does not make the decision. Structured data validates the recommendation. Production would validate LLM output against car data.
 
-> Speaker notes: Several risks and ethical concerns are worth noting. First, catalog bias: my 70-car catalog is curated, and I chose which brands count as niche. A real system would need a larger, continuously updated catalog with data-driven classification. Second, fairness is not neutral. The 1.5-point boost for niche brands is an editorial choice. Third, there is no learning loop. Every session is a cold start with no feedback mechanism. Fourth, LLM hallucination: the LLM generates reasons but does not make the recommendation decision, which is deterministic and auditable. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against structured data.
-
----
+> Speaker notes: Four risks are worth noting. First, catalog bias. My 70-car catalog is curated, and I chose which brands count as niche. A real system would need a larger, continuously updated catalog with data-driven classification. Second, fairness is not neutral. The 1.5-point boost for niche brands is an editorial choice. Third, there is no learning loop. Every session is a cold start with no feedback mechanism. Fourth, LLM hallucination. The LLM generates reasons but does not make the recommendation decision, which is deterministic and auditable. But the reasons could mislead users if the LLM invents attributes. A production system would validate LLM output against structured data.
 
 ## Slide 8: Live Demo
 
@@ -118,9 +102,7 @@ Try queries like:
 
 GitHub: https://github.com/hanfuzhao/carrec-ai
 
-> Speaker notes: The live app is deployed on Render. You can try it with natural language queries. The GitHub repository contains the full codebase with six PRs following git best practices. Thank you for watching.
-
----
+> Speaker notes: The live app is deployed on Render and accepts natural language queries. The GitHub repository contains the full codebase with PRs following git best practices.
 
 ## Recording Guide
 
@@ -141,4 +123,4 @@ Slide timing:
 - Slide 6 (Example): 40s
 - Slide 7 (Risks): 40s
 - Slide 8 (Demo): 20s
-- Total: ~4 min 30s
+- Total: about 4 min 30s
