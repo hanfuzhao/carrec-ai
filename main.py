@@ -28,7 +28,7 @@ from scripts.car_data import (
     get_brand_stats,
     get_catalog,
 )
-from scripts.recommender import compare_modes, recommend
+from scripts.recommender import compare_modes, recommend, recommend_from_filters
 
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
@@ -52,12 +52,11 @@ def health():
 
 @app.route("/api/recommend", methods=["POST"])
 def api_recommend():
-    """Return recommendations for a natural language query in smart or naive mode."""
+    """Return recommendations from structured filters or natural language query."""
     data = request.get_json()
-    if not data or "query" not in data:
-        return jsonify({"error": "Missing 'query' field"}), 400
+    if not data:
+        return jsonify({"error": "Missing request body"}), 400
 
-    query = data["query"]
     mode = data.get("mode", "smart")
     top_k = min(data.get("top_k", 5), 10)
 
@@ -65,7 +64,12 @@ def api_recommend():
         return jsonify({"error": "mode must be 'smart' or 'naive'"}), 400
 
     try:
-        result = recommend(query, mode=mode, top_k=top_k)
+        if "filters" in data and data["filters"]:
+            result = recommend_from_filters(data["filters"], mode=mode, top_k=top_k)
+        elif "query" in data and data["query"]:
+            result = recommend(data["query"], mode=mode, top_k=top_k)
+        else:
+            return jsonify({"error": "Provide 'filters' or 'query' field"}), 400
         return jsonify(result)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
