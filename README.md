@@ -123,11 +123,13 @@ Module3_Hackathon/
 
 ## Deployment
 
-The app is deployed on HuggingFace Space using Docker. To deploy your own instance:
+The app is deployed on Render using Docker. To deploy your own instance:
 
-1. Create a new Space on HuggingFace
-2. Set `OPENAI_API_KEY` as a secret (optional)
-3. Push the code to the Space repository
+1. Fork the repository on GitHub
+2. Create a new Web Service on Render, connecting the GitHub repo
+3. Render will auto-detect the Dockerfile and build the image
+4. Set `OPENAI_API_KEY` as an environment variable (optional)
+5. The app will be available at `https://<your-service-name>.onrender.com`
 
 ## Tech Stack
 

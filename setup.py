@@ -5,6 +5,10 @@ Prepares the data, runs evaluation, and verifies the installation.
 Run with: python setup.py
 """
 
+# AI Attribution: This code was developed with assistance from AI tools
+# (TRAE IDE, https://trae.ai). Design and implementation decisions
+# are the author's own.
+
 import json
 import os
 import subprocess
