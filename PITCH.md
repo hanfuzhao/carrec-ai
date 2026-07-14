@@ -69,5 +69,5 @@ I evaluated both modes across 15 diverse test queries covering family cars, luxu
 
 ## Links
 
-- Live app: https://hanfuzhao781-carrec-ai.hf.space
-- GitHub: (to be added after push)
+- Live app: https://carrec-ai.onrender.com
+- GitHub: https://github.com/hanfuzhao/carrec-ai
