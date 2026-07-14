@@ -1,14 +1,10 @@
-/* ============================================================
-   CarRec AI - Frontend Logic
-   Vanilla JS, modularized. Fetch API against Flask backend.
-   ============================================================ */
+/* CarRec AI - Frontend Logic
+   Vanilla JS, modularized. Fetch API against Flask backend. */
 
 (function () {
     "use strict";
 
-    /* --------------------------------------------------------
-       Config & State
-       -------------------------------------------------------- */
+    /* Config & State */
     const API = {
         recommend: "/api/recommend",
         compare: "/api/compare",
@@ -30,9 +26,7 @@
         budget: 50000,
     };
 
-    /* --------------------------------------------------------
-       DOM cache
-       -------------------------------------------------------- */
+    /* DOM cache */
     const dom = {
         systemStatus: document.getElementById("systemStatus"),
         catalogCount: document.getElementById("catalogCount"),
@@ -80,9 +74,7 @@
         footerMode: document.getElementById("footerMode"),
     };
 
-    /* --------------------------------------------------------
-       Utility helpers
-       -------------------------------------------------------- */
+    /* Utility helpers */
     const util = {
         formatPrice(n) {
             if (n >= 1000) return "$" + n.toLocaleString("en-US");
@@ -117,9 +109,7 @@
         },
     };
 
-    /* --------------------------------------------------------
-       Toast + Loading
-       -------------------------------------------------------- */
+    /* Toast + Loading */
     let toastTimer = null;
     function showToast(message, isError) {
         dom.toast.textContent = message;
@@ -143,9 +133,7 @@
         dom.loadingOverlay.hidden = true;
     }
 
-    /* --------------------------------------------------------
-       API layer
-       -------------------------------------------------------- */
+    /* API layer */
     const api = {
         async getStats() {
             const res = await fetch(API.stats);
@@ -192,9 +180,7 @@
         },
     };
 
-    /* --------------------------------------------------------
-       Bootstrap: load stats + health
-       -------------------------------------------------------- */
+    /* Bootstrap: load stats + health */
     async function bootstrap() {
         try {
             const stats = await api.getStats();
@@ -210,9 +196,7 @@
         }
     }
 
-    /* --------------------------------------------------------
-       Mode toggle
-       -------------------------------------------------------- */
+    /* Mode toggle */
     function initModeToggle() {
         const buttons = dom.modeToggle.querySelectorAll(".mode-btn");
         buttons.forEach(function (btn) {
@@ -230,9 +214,7 @@
         });
     }
 
-    /* --------------------------------------------------------
-       Example chips + query input
-       -------------------------------------------------------- */
+    /* Example chips + query input */
     function initQueryInput() {
         dom.exampleChips.addEventListener("click", function (e) {
             const chip = e.target.closest(".chip");
@@ -274,9 +256,7 @@
         }
     }
 
-    /* --------------------------------------------------------
-       Render: parsed preferences
-       -------------------------------------------------------- */
+    /* Render: parsed preferences */
     function renderParsedPrefs(prefs) {
         if (!prefs) {
             dom.parsedPrefs.hidden = true;
@@ -297,9 +277,7 @@
         }).join("");
     }
 
-    /* --------------------------------------------------------
-       Render: metrics gauges
-       -------------------------------------------------------- */
+    /* Render: metrics gauges */
     function setGauge(container, value, isPct) {
         const fg = container.querySelector(".gauge-fg");
         const num = container.querySelector(".gauge-num");
@@ -328,9 +306,7 @@
         dom.mCandidates.textContent = String(metrics.total_candidates || 0);
     }
 
-    /* --------------------------------------------------------
-       Render: recommendation cards
-       -------------------------------------------------------- */
+    /* Render: recommendation cards */
     function buildCarCard(rec, index) {
         const rank = index + 1;
         const nicheBadge = rec.is_niche_brand ? '<span class="niche-badge">NICHE</span>' : "";
@@ -388,9 +364,7 @@
         dom.resultsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
-    /* --------------------------------------------------------
-       Compare (before/after)
-       -------------------------------------------------------- */
+    /* Compare (before/after) */
     function initCompare() {
         dom.runCompareBtn.addEventListener("click", handleCompare);
     }
@@ -493,9 +467,7 @@
         return { cls: "delta-neu", text: "0" };
     }
 
-    /* --------------------------------------------------------
-       Evaluation dashboard
-       -------------------------------------------------------- */
+    /* Evaluation dashboard */
     function initEval() {
         dom.evalToggle.addEventListener("click", function () {
             const expanded = dom.evalToggle.getAttribute("aria-expanded") === "true";
@@ -565,9 +537,7 @@
         return '<span class="up">+' + Number(v).toFixed(1) + '% vs naive</span>';
     }
 
-    /* --------------------------------------------------------
-       Catalog browser
-       -------------------------------------------------------- */
+    /* Catalog browser */
     function initCatalog() {
         dom.catalogToggle.addEventListener("click", function () {
             const expanded = dom.catalogToggle.getAttribute("aria-expanded") === "true";
@@ -679,17 +649,13 @@
             '</div>';
     }
 
-    /* --------------------------------------------------------
-       Collapsible panel helper
-       -------------------------------------------------------- */
+    /* Collapsible panel helper */
     function togglePanel(trigger, body, open) {
         trigger.setAttribute("aria-expanded", open ? "true" : "false");
         body.hidden = !open;
     }
 
-    /* --------------------------------------------------------
-       Init
-       -------------------------------------------------------- */
+    /* Init */
     function init() {
         initModeToggle();
         initQueryInput();
