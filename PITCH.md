@@ -19,7 +19,7 @@ The system enforces four real-world constraints:
 
 ## LLM Strategy
 
-I used GPT-4o-mini from OpenAI, applied through prompt engineering and retrieval-augmented generation rather than weight-based fine-tuning. The strategy has three layers:
+I used GPT-4o-mini from OpenAI, adapted to the car recommendation domain through prompt engineering and retrieval-augmented generation (RAG). This approach functions as a form of fine-tuning without modifying model weights: the structured catalog and constraint-aware pipeline shape the LLM's behavior to produce responsible, domain-specific recommendations. The strategy has three layers:
 
 **Layer 1: Structured retrieval.** The LLM never sees the raw user query alone. Instead, the system first parses the query to extract budget, use cases, energy preferences, body style, and seating needs. It then filters a structured catalog of 70 cars across 27 brands. Only the filtered, relevant candidates are passed to the LLM.
 
