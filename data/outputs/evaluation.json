@@ -16,7 +16,7 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 1,
-        "niche_exposure": 0.6,
+        "niche_exposure": 1.0,
         "relevance": 1.0
       }
     },
@@ -33,9 +33,9 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 2,
-        "niche_exposure": 0.4,
-        "relevance": 0.8
+        "type_diversity": 3,
+        "niche_exposure": 1.0,
+        "relevance": 1.0
       }
     },
     {
@@ -52,7 +52,7 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 1,
-        "niche_exposure": 0.6,
+        "niche_exposure": 1.0,
         "relevance": 1.0
       }
     },
@@ -69,8 +69,8 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 4,
-        "niche_exposure": 0.6,
+        "type_diversity": 2,
+        "niche_exposure": 0.8,
         "relevance": 1.0
       }
     },
@@ -88,8 +88,8 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 3,
-        "niche_exposure": 0.6,
-        "relevance": 0.6
+        "niche_exposure": 1.0,
+        "relevance": 1.0
       }
     },
     {
@@ -105,9 +105,9 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 4,
-        "niche_exposure": 0.8,
-        "relevance": 0.7
+        "type_diversity": 3,
+        "niche_exposure": 0.6,
+        "relevance": 1.0
       }
     },
     {
@@ -124,7 +124,7 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 4,
-        "niche_exposure": 0.6,
+        "niche_exposure": 1.0,
         "relevance": 1.0
       }
     },
@@ -141,7 +141,7 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 2,
+        "type_diversity": 1,
         "niche_exposure": 1.0,
         "relevance": 1.0
       }
@@ -160,8 +160,8 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 3,
-        "niche_exposure": 0.4,
-        "relevance": 0.9
+        "niche_exposure": 1.0,
+        "relevance": 1.0
       }
     },
     {
@@ -177,9 +177,9 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 4,
-        "niche_exposure": 0.6,
-        "relevance": 0.3
+        "type_diversity": 1,
+        "niche_exposure": 0.2,
+        "relevance": 0.9
       }
     },
     {
@@ -213,8 +213,8 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 1,
-        "niche_exposure": 0.8,
+        "type_diversity": 2,
+        "niche_exposure": 1.0,
         "relevance": 1.0
       }
     },
@@ -230,9 +230,9 @@
       },
       "smart": {
         "budget_compliance": 1.0,
-        "brand_diversity": 4,
+        "brand_diversity": 5,
         "type_diversity": 2,
-        "niche_exposure": 0.0,
+        "niche_exposure": 0.2,
         "relevance": 0.5
       }
     },
@@ -250,7 +250,7 @@
         "budget_compliance": 1.0,
         "brand_diversity": 5,
         "type_diversity": 1,
-        "niche_exposure": 0.4,
+        "niche_exposure": 1.0,
         "relevance": 1.0
       }
     },
@@ -267,9 +267,9 @@
       "smart": {
         "budget_compliance": 1.0,
         "brand_diversity": 5,
-        "type_diversity": 5,
-        "niche_exposure": 0.6,
-        "relevance": 0.6
+        "type_diversity": 3,
+        "niche_exposure": 1.0,
+        "relevance": 0.5
       }
     }
   ],
@@ -314,42 +314,42 @@
         "max": 1.0
       },
       "brand_diversity": {
-        "mean": 4.933,
-        "std": 0.249,
-        "min": 4,
+        "mean": 5.0,
+        "std": 0.0,
+        "min": 5,
         "max": 5
       },
       "type_diversity": {
-        "mean": 2.533,
-        "std": 1.36,
+        "mean": 2.067,
+        "std": 0.998,
         "min": 1,
-        "max": 5
+        "max": 4
       },
       "niche_exposure": {
-        "mean": 0.6,
-        "std": 0.242,
-        "min": 0.0,
+        "mean": 0.853,
+        "std": 0.278,
+        "min": 0.2,
         "max": 1.0
       },
       "relevance": {
-        "mean": 0.793,
-        "std": 0.232,
-        "min": 0.3,
+        "mean": 0.893,
+        "std": 0.198,
+        "min": 0.5,
         "max": 1.0
       }
     }
   },
   "improvements_pct": {
     "budget_compliance": 19.0,
-    "brand_diversity": 64.4,
-    "type_diversity": 26.6,
+    "brand_diversity": 66.7,
+    "type_diversity": 3.4,
     "niche_exposure": Infinity,
-    "relevance": 108.7
+    "relevance": 135.0
   },
   "catalog_stats": {
-    "total_cars": 70,
-    "mainstream_brands": 12,
-    "niche_brands": 15,
-    "total_brands": 27
+    "total_cars": 422,
+    "mainstream_brands": 16,
+    "niche_brands": 26,
+    "total_brands": 42
   }
 }

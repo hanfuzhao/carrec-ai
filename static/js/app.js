@@ -654,8 +654,8 @@
             dom.filterBrand.value = "";
             dom.filterType.value = "";
             dom.filterEnergy.value = "";
-            dom.filterPrice.value = "120000";
-            dom.priceLabel.textContent = "$120k";
+            dom.filterPrice.value = "250000";
+            dom.priceLabel.textContent = "$250k";
             loadCatalog();
         });
     }
