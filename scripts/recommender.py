@@ -234,6 +234,106 @@ def smart_recommend(query: str, top_k: int = 5) -> Dict:
     }
 
 
+def classical_recommend(query: str, top_k: int = 5) -> Dict:
+    """Classical recommendation with budget filter and rule-based scoring.
+
+    No LLM, no diversity enforcement, no fairness boost.
+    A middle ground between naive and smart.
+    """
+    prefs = parse_user_query(query)
+
+    candidates = filter_by_budget(prefs["budget"])
+    if not candidates:
+        candidates = filter_by_budget(prefs["budget"] * 1.2)
+
+    for car in candidates:
+        car["_score"] = score_car(car, prefs)
+
+    candidates.sort(key=lambda c: c["_score"], reverse=True)
+    selected = candidates[:top_k]
+
+    niche_count = sum(1 for c in selected if c["brand"] in NICHE_BRANDS)
+    brands = list(set(c["brand"] for c in selected))
+    types = list(set(c["type"] for c in selected))
+
+    return {
+        "mode": "classical",
+        "query": query,
+        "parsed_prefs": prefs,
+        "recommendations": [
+            {
+                "id": c["id"],
+                "brand": c["brand"],
+                "model": c["model"],
+                "type": c["type"],
+                "price_usd": c["price_usd"],
+                "energy": c["energy"],
+                "seats": c["seats"],
+                "rating": c["rating"],
+                "highlights": c["highlights"],
+                "score": round(c.get("_score", 0), 2),
+                "reason": "",
+                "is_niche_brand": c["brand"] in NICHE_BRANDS,
+            }
+            for c in selected
+        ],
+        "metrics": {
+            "budget_compliance": 1.0,
+            "brand_diversity": len(brands),
+            "type_diversity": len(types),
+            "niche_exposure": niche_count / len(selected) if selected else 0,
+            "total_candidates": len(candidates),
+        },
+    }
+
+
+def _classical_from_prefs(prefs: Dict, top_k: int = 5) -> Dict:
+    """Classical mode from structured prefs (budget filter + scoring, no LLM/diversity)."""
+    candidates = filter_by_budget(prefs["budget"])
+    if not candidates:
+        candidates = filter_by_budget(prefs["budget"] * 1.2)
+
+    for car in candidates:
+        car["_score"] = score_car(car, prefs)
+
+    candidates.sort(key=lambda c: c["_score"], reverse=True)
+    selected = candidates[:top_k]
+
+    niche_count = sum(1 for c in selected if c["brand"] in NICHE_BRANDS)
+    brands = list(set(c["brand"] for c in selected))
+    types = list(set(c["type"] for c in selected))
+
+    return {
+        "mode": "classical",
+        "query": prefs["raw_query"],
+        "parsed_prefs": prefs,
+        "recommendations": [
+            {
+                "id": c["id"],
+                "brand": c["brand"],
+                "model": c["model"],
+                "type": c["type"],
+                "price_usd": c["price_usd"],
+                "energy": c["energy"],
+                "seats": c["seats"],
+                "rating": c["rating"],
+                "highlights": c["highlights"],
+                "score": round(c.get("_score", 0), 2),
+                "reason": "",
+                "is_niche_brand": c["brand"] in NICHE_BRANDS,
+            }
+            for c in selected
+        ],
+        "metrics": {
+            "budget_compliance": 1.0,
+            "brand_diversity": len(brands),
+            "type_diversity": len(types),
+            "niche_exposure": niche_count / len(selected) if selected else 0,
+            "total_candidates": len(candidates),
+        },
+    }
+
+
 def naive_recommend(query: str, top_k: int = 5) -> Dict:
     """Naive recommendation using popularity ranking only.
 
@@ -396,6 +496,9 @@ def recommend_from_filters(filters: Dict, mode: str = "smart", top_k: int = 5) -
     if mode == "naive":
         return _naive_from_prefs(prefs, top_k)
 
+    if mode == "classical":
+        return _classical_from_prefs(prefs, top_k)
+
     candidates = filter_by_budget(prefs["budget"])
     if not candidates:
         candidates = filter_by_budget(prefs["budget"] * 1.2)
@@ -512,11 +615,13 @@ def recommend(query: str, mode: str = "smart", top_k: int = 5) -> Dict:
 
     Args:
         query: Natural language user query
-        mode: 'smart' or 'naive'
+        mode: 'smart', 'classical', or 'naive'
         top_k: Number of recommendations to return
     """
     if mode == "naive":
         return naive_recommend(query, top_k)
+    elif mode == "classical":
+        return classical_recommend(query, top_k)
     else:
         result = smart_recommend(query, top_k)
         if result["recommendations"]:
@@ -525,8 +630,9 @@ def recommend(query: str, mode: str = "smart", top_k: int = 5) -> Dict:
 
 
 def compare_modes(query: str, top_k: int = 5) -> Dict:
-    """Run both modes and return comparison for before/after demo."""
+    """Run all three modes and return comparison for before/after demo."""
     naive = naive_recommend(query, top_k)
+    classical = classical_recommend(query, top_k)
     smart = smart_recommend(query, top_k)
 
     if smart["recommendations"]:
@@ -535,22 +641,27 @@ def compare_modes(query: str, top_k: int = 5) -> Dict:
     return {
         "query": query,
         "naive": naive,
+        "classical": classical,
         "smart": smart,
         "comparison": {
             "budget_compliance": {
                 "naive": naive["metrics"]["budget_compliance"],
+                "classical": classical["metrics"]["budget_compliance"],
                 "smart": smart["metrics"]["budget_compliance"],
             },
             "brand_diversity": {
                 "naive": naive["metrics"]["brand_diversity"],
+                "classical": classical["metrics"]["brand_diversity"],
                 "smart": smart["metrics"]["brand_diversity"],
             },
             "type_diversity": {
                 "naive": naive["metrics"]["type_diversity"],
+                "classical": classical["metrics"]["type_diversity"],
                 "smart": smart["metrics"]["type_diversity"],
             },
             "niche_exposure": {
                 "naive": naive["metrics"]["niche_exposure"],
+                "classical": classical["metrics"]["niche_exposure"],
                 "smart": smart["metrics"]["niche_exposure"],
             },
         }

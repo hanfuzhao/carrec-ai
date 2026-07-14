@@ -15,11 +15,13 @@ CarRec AI recommends cars based on natural language queries like "I need a famil
 
 ## How It Works
 
-Two recommendation modes provide a before/after comparison:
+Three recommendation modes provide a progressive comparison:
 
-**Naive mode** (before): sorts the entire catalog by popularity and returns the top 5. No budget filtering, no diversity enforcement, no fairness boost.
+**Naive mode** (baseline): sorts the entire catalog by popularity and returns the top 5. No budget filtering, no diversity enforcement, no fairness boost.
 
-**Smart mode** (after): uses retrieval-augmented generation (RAG) with an LLM. The pipeline is:
+**Classical mode** (middle): adds budget filtering and rule-based scoring on use-case match, energy/body preferences, and budget utilization. No LLM, no diversity enforcement, no fairness boost.
+
+**Smart mode** (full): uses retrieval-augmented generation (RAG) with an LLM. The pipeline is:
 1. Parse the query to extract budget, use cases, energy preferences, body style, and seating needs
 2. Filter the catalog by budget (hard constraint)
 3. Score each car on use-case match, preference alignment, and a fairness boost for niche brands
@@ -38,15 +40,15 @@ When no OpenAI API key is available, the system falls back to template-based rea
 
 ## Evaluation Results
 
-Across 15 diverse test queries, the smart mode outperforms the naive baseline:
+Across 15 diverse test queries, all three modes are compared:
 
-| Metric | Naive | Smart | Improvement |
-|--------|-------|-------|-------------|
-| Budget compliance | 0.840 | 1.000 | +19.0% |
-| Brand diversity | 3.000 | 4.933 | +64.4% |
-| Type diversity | 2.000 | 2.533 | +26.6% |
-| Niche exposure | 0.000 | 0.600 | from zero to 60% |
-| Relevance | 0.380 | 0.793 | +108.7% |
+| Metric | Naive | Classical | Smart | Improvement (N→S) |
+|--------|-------|-----------|-------|-------------------|
+| Budget compliance | 0.840 | 1.000 | 1.000 | +19.0% |
+| Brand diversity | 3.000 | 3.667 | 5.000 | +66.7% |
+| Type diversity | 2.000 | 1.733 | 2.067 | +3.4% |
+| Niche exposure | 0.000 | 0.867 | 0.853 | from zero to 85% |
+| Relevance | 0.380 | 0.880 | 0.893 | +135.0% |
 
 ## Setup
 
