@@ -164,7 +164,7 @@ def run_evaluation(top_k: int = 5) -> Dict:
         if n_mean > 0:
             improvements[metric] = round(((s_mean - n_mean) / n_mean) * 100, 1)
         else:
-            improvements[metric] = float("inf") if s_mean > 0 else 0.0
+            improvements[metric] = "new" if s_mean > 0 else 0.0
 
     return {
         "num_queries": len(results),

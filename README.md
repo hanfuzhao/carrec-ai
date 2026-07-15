@@ -34,9 +34,9 @@ When no OpenAI API key is available, the system falls back to template-based rea
 
 422 vehicles across 42 brands, covering sedans, SUVs, MPVs, coupes, hatchbacks, wagons, pickups, and convertibles. Price range from $16,000 to $28,000,000. Energy types include gasoline, hybrid, PHEV, and BEV.
 
-19 mainstream brands: Toyota, Honda, Tesla, BMW, Mercedes-Benz, Audi, Volkswagen, Ford, Chevrolet, Hyundai, Kia, Nissan, Acura, Infiniti, Lincoln, Cadillac.
+16 mainstream brands: Toyota, Honda, Tesla, BMW, Mercedes-Benz, Audi, Volkswagen, Ford, Chevrolet, Hyundai, Kia, Nissan, Acura, Infiniti, Lincoln, Cadillac.
 
-23 niche brands: BYD, NIO, Xpeng, Li Auto, Polestar, Rivian, Lucid, Genesis, Mini, Subaru, Mazda, Volvo, Porsche, Lexus, Buick, Land Rover, Jaguar, Ferrari, Lamborghini, McLaren, Aston Martin, Maserati, Bentley, Rolls-Royce, VinFast, Fisker.
+26 niche brands: BYD, NIO, Xpeng, Li Auto, Polestar, Rivian, Lucid, Genesis, Mini, Subaru, Mazda, Volvo, Porsche, Lexus, Buick, Land Rover, Jaguar, Ferrari, Lamborghini, McLaren, Aston Martin, Maserati, Bentley, Rolls-Royce, VinFast, Fisker.
 
 ## Evaluation Results
 

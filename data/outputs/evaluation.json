@@ -480,7 +480,7 @@
     "budget_compliance": 19.0,
     "brand_diversity": 66.7,
     "type_diversity": 3.4,
-    "niche_exposure": Infinity,
+    "niche_exposure": "new",
     "relevance": 135.0
   },
   "catalog_stats": {

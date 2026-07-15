@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Ping health endpoint
         run: |
-          curl -s -o /dev/null -w "%{http_code}" https://hanfuzhao781-carrec-ai.hf.space/health || true
+          curl -s -o /dev/null -w "%{http_code}" https://carrec-ai.onrender.com/health || true
