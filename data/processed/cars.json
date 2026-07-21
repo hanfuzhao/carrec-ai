@@ -1775,5 +1775,8844 @@
     "tags": [
       "family"
     ]
+  },
+  {
+    "id": "buick_encore_2024",
+    "brand": "Buick",
+    "model": "Encore GX 2024",
+    "type": "SUV",
+    "price_usd": 26000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "compact",
+      "affordable",
+      "quiet"
+    ],
+    "rating": 4.0,
+    "popularity": 0.28,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "buick_lacrosse_2024",
+    "brand": "Buick",
+    "model": "LaCrosse 2024",
+    "type": "Sedan",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "luxury"
+    ],
+    "highlights": [
+      "comfortable",
+      "quiet",
+      "spacious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.22,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "toyota_highlander_2024",
+    "brand": "Toyota",
+    "model": "Highlander 2024",
+    "type": "SUV",
+    "price_usd": 39000,
+    "energy": "Hybrid",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "reliable",
+      "fuel_efficient"
+    ],
+    "rating": 4.5,
+    "popularity": 0.82,
+    "tags": [
+      "family",
+      "bestseller"
+    ]
+  },
+  {
+    "id": "toyota_corolla_2024",
+    "brand": "Toyota",
+    "model": "Corolla 2024",
+    "type": "Sedan",
+    "price_usd": 22000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "reliable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.85,
+    "tags": [
+      "bestseller",
+      "value"
+    ]
+  },
+  {
+    "id": "toyota_prius_2024",
+    "brand": "Toyota",
+    "model": "Prius 2024",
+    "type": "Hatchback",
+    "price_usd": 28000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "fuel_efficient",
+      "eco_friendly",
+      "practical"
+    ],
+    "rating": 4.5,
+    "popularity": 0.7,
+    "tags": [
+      "eco",
+      "bestseller"
+    ]
+  },
+  {
+    "id": "toyota_tundra_2024",
+    "brand": "Toyota",
+    "model": "Tundra 2024",
+    "type": "Pickup",
+    "price_usd": 40000,
+    "energy": "Hybrid",
+    "seats": 6,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "offroad",
+      "work"
+    ],
+    "highlights": [
+      "powerful",
+      "reliable",
+      "tow_capable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.6,
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "id": "toyota_bz4x_2024",
+    "brand": "Toyota",
+    "model": "bZ4X 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "spacious",
+      "reliable"
+    ],
+    "rating": 4.0,
+    "popularity": 0.3,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "honda_hrv_2024",
+    "brand": "Honda",
+    "model": "HR-V 2024",
+    "type": "SUV",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "compact",
+      "affordable",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.65,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "honda_passport_2024",
+    "brand": "Honda",
+    "model": "Passport 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad"
+    ],
+    "highlights": [
+      "rugged",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.3,
+    "popularity": 0.5,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "honda_prologue_2024",
+    "brand": "Honda",
+    "model": "Prologue 2024",
+    "type": "SUV",
+    "price_usd": 48000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "spacious",
+      "eco_friendly",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "tesla_model_x_2024",
+    "brand": "Tesla",
+    "model": "Model X 2024",
+    "type": "SUV",
+    "price_usd": 80000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "tech"
+    ],
+    "highlights": [
+      "falcon_doors",
+      "fast",
+      "tech_loaded"
+    ],
+    "rating": 4.5,
+    "popularity": 0.5,
+    "tags": [
+      "luxury",
+      "ev"
+    ]
+  },
+  {
+    "id": "bmw_x3_2024",
+    "brand": "BMW",
+    "model": "X3 2024",
+    "type": "SUV",
+    "price_usd": 47000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.5,
+    "popularity": 0.68,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bmw_x7_2024",
+    "brand": "BMW",
+    "model": "X7 2024",
+    "type": "SUV",
+    "price_usd": 78000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bmw_7_series_2024",
+    "brand": "BMW",
+    "model": "7 Series 2024",
+    "type": "Sedan",
+    "price_usd": 97000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "tech_loaded",
+      "comfortable"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bmw_i4_2024",
+    "brand": "BMW",
+    "model": "i4 2024",
+    "type": "Sedan",
+    "price_usd": 52000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "eco",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "eco_friendly",
+      "sporty"
+    ],
+    "rating": 4.4,
+    "popularity": 0.42,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "mercedes_glc_2024",
+    "brand": "Mercedes-Benz",
+    "model": "GLC 2024",
+    "type": "SUV",
+    "price_usd": 48000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "luxurious",
+      "comfortable",
+      "practical"
+    ],
+    "rating": 4.6,
+    "popularity": 0.65,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "mercedes_s_class_2024",
+    "brand": "Mercedes-Benz",
+    "model": "S-Class 2024",
+    "type": "Sedan",
+    "price_usd": 115000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "tech_loaded",
+      "comfortable"
+    ],
+    "rating": 4.9,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "mercedes_eqe_2024",
+    "brand": "Mercedes-Benz",
+    "model": "EQE 2024",
+    "type": "Sedan",
+    "price_usd": 75000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.5,
+    "popularity": 0.3,
+    "tags": [
+      "luxury",
+      "ev"
+    ]
+  },
+  {
+    "id": "mercedes_g_class_2024",
+    "brand": "Mercedes-Benz",
+    "model": "G-Class 2024",
+    "type": "SUV",
+    "price_usd": 140000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "offroad"
+    ],
+    "highlights": [
+      "iconic",
+      "rugged",
+      "luxurious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.45,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_q7_2024",
+    "brand": "Audi",
+    "model": "Q7 2024",
+    "type": "SUV",
+    "price_usd": 60000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "comfortable"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_a6_2024",
+    "brand": "Audi",
+    "model": "A6 2024",
+    "type": "Sedan",
+    "price_usd": 56000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "luxury"
+    ],
+    "highlights": [
+      "luxurious",
+      "tech_loaded",
+      "comfortable"
+    ],
+    "rating": 4.6,
+    "popularity": 0.5,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_q6_etron_2024",
+    "brand": "Audi",
+    "model": "Q6 e-tron 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.4,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_rs6_2024",
+    "brand": "Audi",
+    "model": "RS6 Avant 2024",
+    "type": "Wagon",
+    "price_usd": 120000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "sport",
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "practical",
+      "sporty"
+    ],
+    "rating": 4.7,
+    "popularity": 0.25,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "vw_atlas_2024",
+    "brand": "Volkswagen",
+    "model": "Atlas 2024",
+    "type": "SUV",
+    "price_usd": 37000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.48,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "vw_id7_2024",
+    "brand": "Volkswagen",
+    "model": "ID.7 2024",
+    "type": "Sedan",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "eco"
+    ],
+    "highlights": [
+      "long_range",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "ford_escape_2024",
+    "brand": "Ford",
+    "model": "Escape 2024",
+    "type": "SUV",
+    "price_usd": 30000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "practical",
+      "fuel_efficient",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.6,
+    "tags": [
+      "practical"
+    ]
+  },
+  {
+    "id": "ford_bronco_2024",
+    "brand": "Ford",
+    "model": "Bronco 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "outdoor"
+    ],
+    "highlights": [
+      "rugged",
+      "offroad_capable",
+      "iconic"
+    ],
+    "rating": 4.4,
+    "popularity": 0.65,
+    "tags": [
+      "offroad"
+    ]
+  },
+  {
+    "id": "ford_explorer_2024",
+    "brand": "Ford",
+    "model": "Explorer 2024",
+    "type": "SUV",
+    "price_usd": 36000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "powerful"
+    ],
+    "rating": 4.3,
+    "popularity": 0.62,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "ford_lightning_2024",
+    "brand": "Ford",
+    "model": "F-150 Lightning 2024",
+    "type": "Pickup",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "eco",
+      "work"
+    ],
+    "highlights": [
+      "powerful",
+      "eco_friendly",
+      "fast"
+    ],
+    "rating": 4.4,
+    "popularity": 0.5,
+    "tags": [
+      "ev",
+      "utility"
+    ]
+  },
+  {
+    "id": "chevy_corvette_2024",
+    "brand": "Chevrolet",
+    "model": "Corvette 2024",
+    "type": "Coupe",
+    "price_usd": 68000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "iconic",
+      "affordable_supercar"
+    ],
+    "rating": 4.8,
+    "popularity": 0.65,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "chevy_equinox_2024",
+    "brand": "Chevrolet",
+    "model": "Equinox 2024",
+    "type": "SUV",
+    "price_usd": 28000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.6,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "chevy_traverse_2024",
+    "brand": "Chevrolet",
+    "model": "Traverse 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.48,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "chevy_malibu_2024",
+    "brand": "Chevrolet",
+    "model": "Malibu 2024",
+    "type": "Sedan",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "comfortable",
+      "spacious"
+    ],
+    "rating": 4.0,
+    "popularity": 0.45,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "hyundai_elantra_2024",
+    "brand": "Hyundai",
+    "model": "Elantra 2024",
+    "type": "Sedan",
+    "price_usd": 22000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "family"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "spacious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.58,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "hyundai_palisade_2024",
+    "brand": "Hyundai",
+    "model": "Palisade 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "comfortable"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "hyundai_santafe_2024",
+    "brand": "Hyundai",
+    "model": "Santa Fe 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "outdoor"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "modern_design"
+    ],
+    "rating": 4.4,
+    "popularity": 0.5,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "hyundai_kona_2024",
+    "brand": "Hyundai",
+    "model": "Kona EV 2024",
+    "type": "SUV",
+    "price_usd": 33000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.45,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "kia_telluride_2024",
+    "brand": "Kia",
+    "model": "Telluride 2024",
+    "type": "SUV",
+    "price_usd": 37000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "value"
+    ],
+    "rating": 4.6,
+    "popularity": 0.65,
+    "tags": [
+      "family",
+      "bestseller"
+    ]
+  },
+  {
+    "id": "kia_seltos_2024",
+    "brand": "Kia",
+    "model": "Seltos 2024",
+    "type": "SUV",
+    "price_usd": 24000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.5,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "kia_stinger_2024",
+    "brand": "Kia",
+    "model": "Stinger 2024",
+    "type": "Sedan",
+    "price_usd": 37000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "nissan_rogue_2024",
+    "brand": "Nissan",
+    "model": "Rogue 2024",
+    "type": "SUV",
+    "price_usd": 29000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.62,
+    "tags": [
+      "family",
+      "bestseller"
+    ]
+  },
+  {
+    "id": "nissan_sentra_2024",
+    "brand": "Nissan",
+    "model": "Sentra 2024",
+    "type": "Sedan",
+    "price_usd": 21000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "practical",
+      "comfortable"
+    ],
+    "rating": 4.1,
+    "popularity": 0.5,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "nissan_pathfinder_2024",
+    "brand": "Nissan",
+    "model": "Pathfinder 2024",
+    "type": "SUV",
+    "price_usd": 37000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad"
+    ],
+    "highlights": [
+      "spacious",
+      "rugged",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.48,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "nissan_z_2024",
+    "brand": "Nissan",
+    "model": "Z 2024",
+    "type": "Coupe",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "iconic",
+      "fast",
+      "fun_to_drive"
+    ],
+    "rating": 4.5,
+    "popularity": 0.45,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "byd_tang_2024",
+    "brand": "BYD",
+    "model": "Tang EV 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "long_range"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "byd_song_2024",
+    "brand": "BYD",
+    "model": "Song Plus EV 2024",
+    "type": "SUV",
+    "price_usd": 28000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.48,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "byd_dolphin_2024",
+    "brand": "BYD",
+    "model": "Dolphin 2024",
+    "type": "Hatchback",
+    "price_usd": 20000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "city",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "practical"
+    ],
+    "rating": 4.0,
+    "popularity": 0.4,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "byd_han_dm_2024",
+    "brand": "BYD",
+    "model": "Han DM-i 2024",
+    "type": "Sedan",
+    "price_usd": 30000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "business"
+    ],
+    "highlights": [
+      "fuel_efficient",
+      "spacious",
+      "luxurious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.42,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "nio_et7_2024",
+    "brand": "NIO",
+    "model": "ET7 2024",
+    "type": "Sedan",
+    "price_usd": 58000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business",
+      "tech"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.5,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "nio_es8_2024",
+    "brand": "NIO",
+    "model": "ES8 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "swappable_battery"
+    ],
+    "rating": 4.4,
+    "popularity": 0.32,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "nio_ec6_2024",
+    "brand": "NIO",
+    "model": "EC6 2024",
+    "type": "SUV",
+    "price_usd": 46000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "sporty",
+      "fast",
+      "luxurious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "xpeng_p5_2024",
+    "brand": "Xpeng",
+    "model": "P5 2024",
+    "type": "Sedan",
+    "price_usd": 25000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "commute",
+      "tech"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "tech_loaded",
+      "spacious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.38,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "xpeng_g6_2024",
+    "brand": "Xpeng",
+    "model": "G6 2024",
+    "type": "SUV",
+    "price_usd": 30000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "fast_charging",
+      "spacious",
+      "tech_loaded"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "li_auto_l8_2024",
+    "brand": "Li Auto",
+    "model": "L8 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "PHEV",
+    "seats": 6,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "no_range_anxiety"
+    ],
+    "rating": 4.5,
+    "popularity": 0.42,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "li_auto_l6_2024",
+    "brand": "Li Auto",
+    "model": "L6 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "spacious",
+      "no_range_anxiety"
+    ],
+    "rating": 4.3,
+    "popularity": 0.38,
+    "tags": [
+      "family",
+      "value"
+    ]
+  },
+  {
+    "id": "volvo_ex30_2024",
+    "brand": "Volvo",
+    "model": "EX30 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "eco_friendly",
+      "safe"
+    ],
+    "rating": 4.2,
+    "popularity": 0.32,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "volvo_ex90_2024",
+    "brand": "Volvo",
+    "model": "EX90 2024",
+    "type": "SUV",
+    "price_usd": 78000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "safe",
+      "luxurious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "volvo_v60_2024",
+    "brand": "Volvo",
+    "model": "V60 2024",
+    "type": "Wagon",
+    "price_usd": 46000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "family",
+      "outdoor"
+    ],
+    "highlights": [
+      "practical",
+      "safe",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "practical"
+    ]
+  },
+  {
+    "id": "porsche_cayenne_2024",
+    "brand": "Porsche",
+    "model": "Cayenne 2024",
+    "type": "SUV",
+    "price_usd": 85000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "powerful"
+    ],
+    "rating": 4.7,
+    "popularity": 0.55,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_panamera_2024",
+    "brand": "Porsche",
+    "model": "Panamera 2024",
+    "type": "Sedan",
+    "price_usd": 95000,
+    "energy": "Hybrid",
+    "seats": 4,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "business"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "sporty"
+    ],
+    "rating": 4.7,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_718_2024",
+    "brand": "Porsche",
+    "model": "718 Cayman 2024",
+    "type": "Coupe",
+    "price_usd": 68000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "precise_handling",
+      "sporty",
+      "fun_to_drive"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_taycan_cross_2024",
+    "brand": "Porsche",
+    "model": "Taycan Cross Turismo 2024",
+    "type": "Wagon",
+    "price_usd": 100000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Wagon",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "practical",
+      "eco_friendly"
+    ],
+    "rating": 4.6,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "mazda_cx30_2024",
+    "brand": "Mazda",
+    "model": "CX-30 2024",
+    "type": "SUV",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "compact",
+      "fun_to_drive",
+      "premium_feel"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "mazda_cx9_2024",
+    "brand": "Mazda",
+    "model": "CX-9 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "premium_feel",
+      "comfortable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.42,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "mazda_mx30_2024",
+    "brand": "Mazda",
+    "model": "MX-30 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "compact",
+      "unique_design"
+    ],
+    "rating": 3.9,
+    "popularity": 0.18,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "subaru_crosstrek_2024",
+    "brand": "Subaru",
+    "model": "Crosstrek 2024",
+    "type": "SUV",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "outdoor",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "awd",
+      "compact",
+      "rugged"
+    ],
+    "rating": 4.4,
+    "popularity": 0.5,
+    "tags": [
+      "outdoor",
+      "value"
+    ]
+  },
+  {
+    "id": "subaru_wrx_2024",
+    "brand": "Subaru",
+    "model": "WRX 2024",
+    "type": "Sedan",
+    "price_usd": 32000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "awd",
+      "sporty"
+    ],
+    "rating": 4.4,
+    "popularity": 0.45,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "subaru_ascent_2024",
+    "brand": "Subaru",
+    "model": "Ascent 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "outdoor"
+    ],
+    "highlights": [
+      "spacious",
+      "awd",
+      "safe"
+    ],
+    "rating": 4.3,
+    "popularity": 0.42,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "lexus_nx_2024",
+    "brand": "Lexus",
+    "model": "NX 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "reliable",
+      "fuel_efficient"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_lx_2024",
+    "brand": "Lexus",
+    "model": "LX 2024",
+    "type": "SUV",
+    "price_usd": 90000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "offroad",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "rugged",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_is_2024",
+    "brand": "Lexus",
+    "model": "IS 2024",
+    "type": "Sedan",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "reliable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "lexus_rz_2024",
+    "brand": "Lexus",
+    "model": "RZ 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_gv80_2024",
+    "brand": "Genesis",
+    "model": "GV80 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "value_luxury"
+    ],
+    "rating": 4.6,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_g90_2024",
+    "brand": "Genesis",
+    "model": "G90 2024",
+    "type": "Sedan",
+    "price_usd": 90000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.7,
+    "popularity": 0.2,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_electrified_g80_2024",
+    "brand": "Genesis",
+    "model": "Electrified G80 2024",
+    "type": "Sedan",
+    "price_usd": 80000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "spacious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "polestar_4_2024",
+    "brand": "Polestar",
+    "model": "Polestar 4 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "eco",
+      "luxury",
+      "tech"
+    ],
+    "highlights": [
+      "fast_charging",
+      "sporty",
+      "minimalist"
+    ],
+    "rating": 4.3,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "rivian_r2_2024",
+    "brand": "Rivian",
+    "model": "R2 2024",
+    "type": "SUV",
+    "price_usd": 47000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "adventure_ready",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.28,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "lucid_gravity_2024",
+    "brand": "Lucid",
+    "model": "Gravity 2024",
+    "type": "SUV",
+    "price_usd": 80000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "longest_range",
+      "luxurious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mini_countryman_2024",
+    "brand": "Mini",
+    "model": "Countryman 2024",
+    "type": "SUV",
+    "price_usd": 32000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "family"
+    ],
+    "highlights": [
+      "spacious",
+      "fun_to_drive",
+      "iconic_design"
+    ],
+    "rating": 4.2,
+    "popularity": 0.3,
+    "tags": [
+      "city"
+    ]
+  },
+  {
+    "id": "mini_electric_2024",
+    "brand": "Mini",
+    "model": "Cooper SE 2024",
+    "type": "Hatchback",
+    "price_usd": 30000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Hatchback",
+    "use_cases": [
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "compact",
+      "eco_friendly",
+      "fun_to_drive"
+    ],
+    "rating": 4.1,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "city"
+    ]
+  },
+  {
+    "id": "acura_tlx_2024",
+    "brand": "Acura",
+    "model": "TLX 2024",
+    "type": "Sedan",
+    "price_usd": 41000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "reliable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.45,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "acura_mdx_2024",
+    "brand": "Acura",
+    "model": "MDX 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.5,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "acura_rdx_2024",
+    "brand": "Acura",
+    "model": "RDX 2024",
+    "type": "SUV",
+    "price_usd": 41000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "luxurious",
+      "practical",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.48,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_q50_2024",
+    "brand": "Infiniti",
+    "model": "Q50 2024",
+    "type": "Sedan",
+    "price_usd": 43000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "powerful"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_qx60_2024",
+    "brand": "Infiniti",
+    "model": "QX60 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_navigator_2024",
+    "brand": "Lincoln",
+    "model": "Navigator 2024",
+    "type": "SUV",
+    "price_usd": 80000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.5,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "lincoln_aviator_2024",
+    "brand": "Lincoln",
+    "model": "Aviator 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "PHEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "eco_friendly"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_escalade_2024",
+    "brand": "Cadillac",
+    "model": "Escalade 2024",
+    "type": "SUV",
+    "price_usd": 86000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "iconic"
+    ],
+    "rating": 4.6,
+    "popularity": 0.55,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_ct5_2024",
+    "brand": "Cadillac",
+    "model": "CT5 2024",
+    "type": "Sedan",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "tech_loaded"
+    ],
+    "rating": 4.3,
+    "popularity": 0.38,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_lyriq_2024",
+    "brand": "Cadillac",
+    "model": "Lyriq 2024",
+    "type": "SUV",
+    "price_usd": 58000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "tech_loaded"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "landrover_rangerover_2024",
+    "brand": "Land Rover",
+    "model": "Range Rover 2024",
+    "type": "SUV",
+    "price_usd": 105000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "offroad"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "rugged",
+      "iconic"
+    ],
+    "rating": 4.6,
+    "popularity": 0.5,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "landrover_defender_2024",
+    "brand": "Land Rover",
+    "model": "Defender 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "outdoor",
+      "luxury"
+    ],
+    "highlights": [
+      "rugged",
+      "offroad_capable",
+      "iconic"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "offroad"
+    ]
+  },
+  {
+    "id": "landrover_discovery_2024",
+    "brand": "Land Rover",
+    "model": "Discovery 2024",
+    "type": "SUV",
+    "price_usd": 60000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "rugged",
+      "luxurious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "family",
+      "offroad"
+    ]
+  },
+  {
+    "id": "jaguar_fpace_2024",
+    "brand": "Jaguar",
+    "model": "F-Pace 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "great_handling"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "jaguar_ipace_2024",
+    "brand": "Jaguar",
+    "model": "I-Pace 2024",
+    "type": "SUV",
+    "price_usd": 70000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "eco",
+      "luxury",
+      "sport"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "jaguar_xf_2024",
+    "brand": "Jaguar",
+    "model": "XF 2024",
+    "type": "Sedan",
+    "price_usd": 48000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "luxury"
+    ],
+    "highlights": [
+      "elegant",
+      "luxurious",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_roma_2024",
+    "brand": "Ferrari",
+    "model": "Roma 2024",
+    "type": "Coupe",
+    "price_usd": 250000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "iconic",
+      "ultra_luxurious"
+    ],
+    "rating": 4.9,
+    "popularity": 0.45,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_sf90_2024",
+    "brand": "Ferrari",
+    "model": "SF90 2024",
+    "type": "Coupe",
+    "price_usd": 500000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "track_ready"
+    ],
+    "rating": 4.9,
+    "popularity": 0.4,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_296_2024",
+    "brand": "Ferrari",
+    "model": "296 GTB 2024",
+    "type": "Coupe",
+    "price_usd": 300000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "precise_handling"
+    ],
+    "rating": 4.9,
+    "popularity": 0.35,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "lamborghini_huracan_2024",
+    "brand": "Lamborghini",
+    "model": "Huracan 2024",
+    "type": "Coupe",
+    "price_usd": 250000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "iconic",
+      "exotic"
+    ],
+    "rating": 4.8,
+    "popularity": 0.45,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_urus_2024",
+    "brand": "Lamborghini",
+    "model": "Urus 2024",
+    "type": "SUV",
+    "price_usd": 230000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "spacious"
+    ],
+    "rating": 4.7,
+    "popularity": 0.5,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_revuelto_2024",
+    "brand": "Lamborghini",
+    "model": "Revuelto 2024",
+    "type": "Coupe",
+    "price_usd": 600000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "exotic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.4,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mclaren_750s_2024",
+    "brand": "McLaren",
+    "model": "750S 2024",
+    "type": "Coupe",
+    "price_usd": 320000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "lightweight",
+      "track_ready"
+    ],
+    "rating": 4.8,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "mclaren_artura_2024",
+    "brand": "McLaren",
+    "model": "Artura 2024",
+    "type": "Coupe",
+    "price_usd": 230000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "eco",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "lightweight"
+    ],
+    "rating": 4.7,
+    "popularity": 0.28,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "astonmartin_db12_2024",
+    "brand": "Aston Martin",
+    "model": "DB12 2024",
+    "type": "Coupe",
+    "price_usd": 250000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "ultra_fast",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.35,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "astonmartin_vantage_2024",
+    "brand": "Aston Martin",
+    "model": "Vantage 2024",
+    "type": "Coupe",
+    "price_usd": 190000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "iconic"
+    ],
+    "rating": 4.7,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "astonmartin_dbx_2024",
+    "brand": "Aston Martin",
+    "model": "DBX 2024",
+    "type": "SUV",
+    "price_usd": 200000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "sporty",
+      "spacious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "maserati_grecale_2024",
+    "brand": "Maserati",
+    "model": "Grecale 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "sporty",
+      "italian_design"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "maserati_levante_2024",
+    "brand": "Maserati",
+    "model": "Levante 2024",
+    "type": "SUV",
+    "price_usd": 85000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport"
+    ],
+    "highlights": [
+      "luxurious",
+      "sporty",
+      "powerful"
+    ],
+    "rating": 4.5,
+    "popularity": 0.32,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "maserati_mc20_2024",
+    "brand": "Maserati",
+    "model": "MC20 2024",
+    "type": "Coupe",
+    "price_usd": 230000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "ultra_luxurious"
+    ],
+    "rating": 4.8,
+    "popularity": 0.25,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "bentley_bentayga_2024",
+    "brand": "Bentley",
+    "model": "Bentayga 2024",
+    "type": "SUV",
+    "price_usd": 200000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bentley_continental_2024",
+    "brand": "Bentley",
+    "model": "Continental GT 2024",
+    "type": "Coupe",
+    "price_usd": 250000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "ultra_fast",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "rollsroyce_phantom_2024",
+    "brand": "Rolls-Royce",
+    "model": "Phantom 2024",
+    "type": "Sedan",
+    "price_usd": 500000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "iconic",
+      "handcrafted"
+    ],
+    "rating": 4.9,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "rollsroyce_cullinan_2024",
+    "brand": "Rolls-Royce",
+    "model": "Cullinan 2024",
+    "type": "SUV",
+    "price_usd": 400000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "offroad"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.8,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "vinfast_vf8_2024",
+    "brand": "VinFast",
+    "model": "VF8 2024",
+    "type": "SUV",
+    "price_usd": 43000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.0,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "vinfast_vf9_2024",
+    "brand": "VinFast",
+    "model": "VF9 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "eco_friendly",
+      "luxurious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "fisker_ocean_2024",
+    "brand": "Fisker",
+    "model": "Ocean 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "luxury"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "spacious",
+      "unique_design"
+    ],
+    "rating": 4.0,
+    "popularity": 0.18,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "chevy_corvette_z06_2024",
+    "brand": "Chevrolet",
+    "model": "Corvette Z06 2024",
+    "type": "Coupe",
+    "price_usd": 110000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "exotic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.45,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "ford_mustang_gtd_2024",
+    "brand": "Ford",
+    "model": "Mustang GTD 2024",
+    "type": "Coupe",
+    "price_usd": 80000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "iconic"
+    ],
+    "rating": 4.7,
+    "popularity": 0.4,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "toyota_crown_2024",
+    "brand": "Toyota",
+    "model": "Crown 2024",
+    "type": "Sedan",
+    "price_usd": 41000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "family",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "comfortable",
+      "fuel_efficient"
+    ],
+    "rating": 4.4,
+    "popularity": 0.45,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "honda_civic_typer_2024",
+    "brand": "Honda",
+    "model": "Civic Type R 2024",
+    "type": "Hatchback",
+    "price_usd": 44000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "track_ready",
+      "fun_to_drive"
+    ],
+    "rating": 4.6,
+    "popularity": 0.45,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "toyota_4runner_2024",
+    "brand": "Toyota",
+    "model": "4Runner 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "outdoor",
+      "family"
+    ],
+    "highlights": [
+      "rugged",
+      "offroad_capable",
+      "reliable"
+    ],
+    "rating": 4.4,
+    "popularity": 0.65,
+    "tags": [
+      "offroad"
+    ]
+  },
+  {
+    "id": "toyota_grand_highlander_2024",
+    "brand": "Toyota",
+    "model": "Grand Highlander 2024",
+    "type": "SUV",
+    "price_usd": 44000,
+    "energy": "Hybrid",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "fuel_efficient"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "honda_civic_si_2024",
+    "brand": "Honda",
+    "model": "Civic Si 2024",
+    "type": "Sedan",
+    "price_usd": 29000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "commute"
+    ],
+    "highlights": [
+      "sporty",
+      "fun_to_drive",
+      "affordable"
+    ],
+    "rating": 4.5,
+    "popularity": 0.5,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "honda_ridgeline_2024",
+    "brand": "Honda",
+    "model": "Ridgeline 2024",
+    "type": "Pickup",
+    "price_usd": 39000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "family",
+      "work"
+    ],
+    "highlights": [
+      "versatile",
+      "comfortable",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "id": "honda_zrv_2024",
+    "brand": "Honda",
+    "model": "ZR-V 2024",
+    "type": "SUV",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "honda_civic_hatchback_2024",
+    "brand": "Honda",
+    "model": "Civic Hatchback 2024",
+    "type": "Hatchback",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "commute",
+      "city",
+      "family"
+    ],
+    "highlights": [
+      "practical",
+      "fuel_efficient",
+      "versatile"
+    ],
+    "rating": 4.4,
+    "popularity": 0.55,
+    "tags": [
+      "practical"
+    ]
+  },
+  {
+    "id": "tesla_model_3_long_range_2024",
+    "brand": "Tesla",
+    "model": "Model 3 Long Range 2024",
+    "type": "Sedan",
+    "price_usd": 47000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "long_range",
+      "fast",
+      "tech_loaded"
+    ],
+    "rating": 4.6,
+    "popularity": 0.85,
+    "tags": [
+      "bestseller",
+      "ev"
+    ]
+  },
+  {
+    "id": "tesla_model_y_performance_2024",
+    "brand": "Tesla",
+    "model": "Model Y Performance 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "family",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "tech_loaded"
+    ],
+    "rating": 4.6,
+    "popularity": 0.7,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "tesla_model_s_plaid_2024",
+    "brand": "Tesla",
+    "model": "Model S Plaid 2024",
+    "type": "Sedan",
+    "price_usd": 90000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "long_range",
+      "luxurious"
+    ],
+    "rating": 4.8,
+    "popularity": 0.55,
+    "tags": [
+      "luxury",
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "tesla_model_x_plaid_2024",
+    "brand": "Tesla",
+    "model": "Model X Plaid 2024",
+    "type": "SUV",
+    "price_usd": 100000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "falcon_doors",
+      "spacious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "ev"
+    ]
+  },
+  {
+    "id": "tesla_roadster_2024",
+    "brand": "Tesla",
+    "model": "Roadster 2024",
+    "type": "Convertible",
+    "price_usd": 200000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "iconic",
+      "tech_loaded"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "sport",
+      "ev"
+    ]
+  },
+  {
+    "id": "tesla_model_3_standard_2024",
+    "brand": "Tesla",
+    "model": "Model 3 Standard 2024",
+    "type": "Sedan",
+    "price_usd": 39000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "eco_friendly",
+      "tech_loaded"
+    ],
+    "rating": 4.4,
+    "popularity": 0.8,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "tesla_model_y_long_range_2024",
+    "brand": "Tesla",
+    "model": "Model Y Long Range 2024",
+    "type": "SUV",
+    "price_usd": 48000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "long_range",
+      "spacious",
+      "tech_loaded"
+    ],
+    "rating": 4.6,
+    "popularity": 0.88,
+    "tags": [
+      "bestseller",
+      "ev"
+    ]
+  },
+  {
+    "id": "bmw_x1_2024",
+    "brand": "BMW",
+    "model": "X1 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "city"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.55,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bmw_x4_2024",
+    "brand": "BMW",
+    "model": "X4 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "coupe_design",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "bmw_z4_2024",
+    "brand": "BMW",
+    "model": "Z4 2024",
+    "type": "Convertible",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fun_to_drive",
+      "sporty",
+      "open_air"
+    ],
+    "rating": 4.5,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "bmw_m3_2024",
+    "brand": "BMW",
+    "model": "M3 2024",
+    "type": "Sedan",
+    "price_usd": 75000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "precise_handling"
+    ],
+    "rating": 4.7,
+    "popularity": 0.45,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mercedes_a_class_2024",
+    "brand": "Mercedes-Benz",
+    "model": "A-Class 2024",
+    "type": "Sedan",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "affordable_luxury",
+      "compact",
+      "elegant"
+    ],
+    "rating": 4.2,
+    "popularity": 0.5,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "mercedes_gla_2024",
+    "brand": "Mercedes-Benz",
+    "model": "GLA 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.55,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "mercedes_glb_2024",
+    "brand": "Mercedes-Benz",
+    "model": "GLB 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.45,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "mercedes_eqb_2024",
+    "brand": "Mercedes-Benz",
+    "model": "EQB 2024",
+    "type": "SUV",
+    "price_usd": 53000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "luxury"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "spacious",
+      "luxurious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_a3_2024",
+    "brand": "Audi",
+    "model": "A3 2024",
+    "type": "Sedan",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "affordable_luxury"
+    ],
+    "rating": 4.2,
+    "popularity": 0.45,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_q3_2024",
+    "brand": "Audi",
+    "model": "Q3 2024",
+    "type": "SUV",
+    "price_usd": 37000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "city",
+      "family"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.5,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_q8_2024",
+    "brand": "Audi",
+    "model": "Q8 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "sporty"
+    ],
+    "rating": 4.5,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_q8_etron_2024",
+    "brand": "Audi",
+    "model": "Q8 e-tron 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "audi_tt_2024",
+    "brand": "Audi",
+    "model": "TT 2024",
+    "type": "Coupe",
+    "price_usd": 50000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "sporty",
+      "iconic",
+      "fun_to_drive"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "vw_jetta_2024",
+    "brand": "Volkswagen",
+    "model": "Jetta 2024",
+    "type": "Sedan",
+    "price_usd": 22000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "family",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "spacious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.6,
+    "tags": [
+      "value",
+      "practical"
+    ]
+  },
+  {
+    "id": "vw_taos_2024",
+    "brand": "Volkswagen",
+    "model": "Taos 2024",
+    "type": "SUV",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city",
+      "family"
+    ],
+    "highlights": [
+      "compact",
+      "practical",
+      "affordable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.45,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "vw_arteon_2024",
+    "brand": "Volkswagen",
+    "model": "Arteon 2024",
+    "type": "Sedan",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "family"
+    ],
+    "highlights": [
+      "elegant",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "practical"
+    ]
+  },
+  {
+    "id": "vw_id5_2024",
+    "brand": "Volkswagen",
+    "model": "ID.5 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "aerodynamic",
+      "spacious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.22,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "vw_idbuzz_2024",
+    "brand": "Volkswagen",
+    "model": "ID.Buzz 2024",
+    "type": "MPV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "MPV",
+    "use_cases": [
+      "family",
+      "eco",
+      "road_trip"
+    ],
+    "highlights": [
+      "iconic",
+      "spacious",
+      "eco_friendly"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "vw_passat_2024",
+    "brand": "Volkswagen",
+    "model": "Passat 2024",
+    "type": "Sedan",
+    "price_usd": 28000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "business"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.35,
+    "tags": [
+      "practical"
+    ]
+  },
+  {
+    "id": "vw_touareg_2024",
+    "brand": "Volkswagen",
+    "model": "Touareg 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "offroad"
+    ],
+    "highlights": [
+      "luxurious",
+      "powerful",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "ford_edge_2024",
+    "brand": "Ford",
+    "model": "Edge 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.45,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "ford_ecosport_2024",
+    "brand": "Ford",
+    "model": "EcoSport 2024",
+    "type": "SUV",
+    "price_usd": 23000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "affordable",
+      "practical"
+    ],
+    "rating": 4.0,
+    "popularity": 0.35,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "ford_maverick_2024",
+    "brand": "Ford",
+    "model": "Maverick 2024",
+    "type": "Pickup",
+    "price_usd": 25000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "compact"
+    ],
+    "rating": 4.4,
+    "popularity": 0.7,
+    "tags": [
+      "value",
+      "utility"
+    ]
+  },
+  {
+    "id": "ford_ranger_2024",
+    "brand": "Ford",
+    "model": "Ranger 2024",
+    "type": "Pickup",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "work",
+      "offroad"
+    ],
+    "highlights": [
+      "rugged",
+      "powerful",
+      "versatile"
+    ],
+    "rating": 4.3,
+    "popularity": 0.55,
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "id": "chevy_trailblazer_2024",
+    "brand": "Chevrolet",
+    "model": "Trailblazer 2024",
+    "type": "SUV",
+    "price_usd": 24000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city",
+      "family"
+    ],
+    "highlights": [
+      "compact",
+      "affordable",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.5,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "chevy_trax_2024",
+    "brand": "Chevrolet",
+    "model": "Trax 2024",
+    "type": "SUV",
+    "price_usd": 22000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "compact",
+      "modern_design"
+    ],
+    "rating": 4.1,
+    "popularity": 0.55,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "chevy_blazer_2024",
+    "brand": "Chevrolet",
+    "model": "Blazer 2024",
+    "type": "SUV",
+    "price_usd": 36000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "sport"
+    ],
+    "highlights": [
+      "sporty",
+      "spacious",
+      "modern_design"
+    ],
+    "rating": 4.2,
+    "popularity": 0.48,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "chevy_camaro_2024",
+    "brand": "Chevrolet",
+    "model": "Camaro 2024",
+    "type": "Coupe",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "iconic",
+      "fast",
+      "sporty"
+    ],
+    "rating": 4.3,
+    "popularity": 0.55,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "chevy_silverado_2024",
+    "brand": "Chevrolet",
+    "model": "Silverado 2024",
+    "type": "Pickup",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 6,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "work",
+      "tow"
+    ],
+    "highlights": [
+      "powerful",
+      "rugged",
+      "tow_capable"
+    ],
+    "rating": 4.5,
+    "popularity": 0.8,
+    "tags": [
+      "bestseller",
+      "utility"
+    ]
+  },
+  {
+    "id": "hyundai_venue_2024",
+    "brand": "Hyundai",
+    "model": "Venue 2024",
+    "type": "SUV",
+    "price_usd": 20000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "compact",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.4,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "hyundai_santa_cruz_2024",
+    "brand": "Hyundai",
+    "model": "Santa Cruz 2024",
+    "type": "Pickup",
+    "price_usd": 28000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "outdoor",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "versatile",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "id": "hyundai_ioniq6_2024",
+    "brand": "Hyundai",
+    "model": "Ioniq 6 2024",
+    "type": "Sedan",
+    "price_usd": 38000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "eco",
+      "commute",
+      "tech"
+    ],
+    "highlights": [
+      "long_range",
+      "aerodynamic",
+      "tech_loaded"
+    ],
+    "rating": 4.4,
+    "popularity": 0.4,
+    "tags": [
+      "ev",
+      "tech"
+    ]
+  },
+  {
+    "id": "hyundai_accent_2024",
+    "brand": "Hyundai",
+    "model": "Accent 2024",
+    "type": "Sedan",
+    "price_usd": 17000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "compact"
+    ],
+    "rating": 4.1,
+    "popularity": 0.4,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "hyundai_tucson_phev_2024",
+    "brand": "Hyundai",
+    "model": "Tucson PHEV 2024",
+    "type": "SUV",
+    "price_usd": 39000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "fuel_efficient",
+      "spacious",
+      "eco_friendly"
+    ],
+    "rating": 4.3,
+    "popularity": 0.35,
+    "tags": [
+      "eco"
+    ]
+  },
+  {
+    "id": "kia_rio_2024",
+    "brand": "Kia",
+    "model": "Rio 2024",
+    "type": "Sedan",
+    "price_usd": 17000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "compact"
+    ],
+    "rating": 4.1,
+    "popularity": 0.4,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "kia_soul_2024",
+    "brand": "Kia",
+    "model": "Soul 2024",
+    "type": "SUV",
+    "price_usd": 20000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute",
+      "family"
+    ],
+    "highlights": [
+      "unique_design",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.5,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "kia_carnival_2024",
+    "brand": "Kia",
+    "model": "Carnival 2024",
+    "type": "MPV",
+    "price_usd": 34000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "MPV",
+    "use_cases": [
+      "family",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "family_friendly"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "kia_ev9_2024",
+    "brand": "Kia",
+    "model": "EV9 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "spacious",
+      "long_range",
+      "eco_friendly"
+    ],
+    "rating": 4.6,
+    "popularity": 0.45,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "kia_niro_ev_2024",
+    "brand": "Kia",
+    "model": "Niro EV 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "eco",
+      "commute",
+      "family"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "fuel_efficient",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "kia_k8_2024",
+    "brand": "Kia",
+    "model": "K8 2024",
+    "type": "Sedan",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "elegant"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "nissan_versa_2024",
+    "brand": "Nissan",
+    "model": "Versa 2024",
+    "type": "Sedan",
+    "price_usd": 16000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city"
+    ],
+    "highlights": [
+      "affordable",
+      "fuel_efficient",
+      "compact"
+    ],
+    "rating": 4.0,
+    "popularity": 0.4,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "nissan_kicks_2024",
+    "brand": "Nissan",
+    "model": "Kicks 2024",
+    "type": "SUV",
+    "price_usd": 21000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "affordable",
+      "compact",
+      "modern_design"
+    ],
+    "rating": 4.1,
+    "popularity": 0.45,
+    "tags": [
+      "value"
+    ]
+  },
+  {
+    "id": "nissan_murano_2024",
+    "brand": "Nissan",
+    "model": "Murano 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "luxurious",
+      "comfortable",
+      "spacious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.4,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "nissan_frontier_2024",
+    "brand": "Nissan",
+    "model": "Frontier 2024",
+    "type": "Pickup",
+    "price_usd": 32000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "work",
+      "offroad"
+    ],
+    "highlights": [
+      "rugged",
+      "reliable",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "utility"
+    ]
+  },
+  {
+    "id": "nissan_leaf_2024",
+    "brand": "Nissan",
+    "model": "Leaf 2024",
+    "type": "Hatchback",
+    "price_usd": 28000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "commute",
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "eco_friendly",
+      "compact"
+    ],
+    "rating": 4.0,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "nissan_armada_2024",
+    "brand": "Nissan",
+    "model": "Armada 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "tow",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "powerful",
+      "tow_capable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "acura_integra_2024",
+    "brand": "Acura",
+    "model": "Integra 2024",
+    "type": "Hatchback",
+    "price_usd": 32000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "sport",
+      "commute",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "practical",
+      "fun_to_drive"
+    ],
+    "rating": 4.5,
+    "popularity": 0.55,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "acura_tlx_type_s_2024",
+    "brand": "Acura",
+    "model": "TLX Type S 2024",
+    "type": "Sedan",
+    "price_usd": 58000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.4,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "acura_mdx_type_s_2024",
+    "brand": "Acura",
+    "model": "MDX Type S 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "fast",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "acura_rdx_aspec_2024",
+    "brand": "Acura",
+    "model": "RDX A-Spec 2024",
+    "type": "SUV",
+    "price_usd": 47000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "acura_zdx_2024",
+    "brand": "Acura",
+    "model": "ZDX 2024",
+    "type": "SUV",
+    "price_usd": 60000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "luxurious",
+      "tech_loaded"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "acura_ilx_2024",
+    "brand": "Acura",
+    "model": "ILX 2024",
+    "type": "Sedan",
+    "price_usd": 28000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "luxury"
+    ],
+    "highlights": [
+      "affordable_luxury",
+      "reliable",
+      "compact"
+    ],
+    "rating": 4.1,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "value"
+    ]
+  },
+  {
+    "id": "acura_nsx_2024",
+    "brand": "Acura",
+    "model": "NSX 2024",
+    "type": "Coupe",
+    "price_usd": 170000,
+    "energy": "Hybrid",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "hybrid_power"
+    ],
+    "rating": 4.7,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "acura_integra_type_s_2024",
+    "brand": "Acura",
+    "model": "Integra Type S 2024",
+    "type": "Hatchback",
+    "price_usd": 52000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "track_ready",
+      "fun_to_drive"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "acura_mdx_aspec_2024",
+    "brand": "Acura",
+    "model": "MDX A-Spec 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "spacious",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.38,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "infiniti_qx50_2024",
+    "brand": "Infiniti",
+    "model": "QX50 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_qx55_2024",
+    "brand": "Infiniti",
+    "model": "QX55 2024",
+    "type": "SUV",
+    "price_usd": 47000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "coupe_design"
+    ],
+    "rating": 4.2,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_qx80_2024",
+    "brand": "Infiniti",
+    "model": "QX80 2024",
+    "type": "SUV",
+    "price_usd": 82000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "tow"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.4,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "infiniti_q60_2024",
+    "brand": "Infiniti",
+    "model": "Q60 2024",
+    "type": "Coupe",
+    "price_usd": 48000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "fast"
+    ],
+    "rating": 4.3,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_q70_2024",
+    "brand": "Infiniti",
+    "model": "Q70 2024",
+    "type": "Sedan",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_qx30_2024",
+    "brand": "Infiniti",
+    "model": "QX30 2024",
+    "type": "SUV",
+    "price_usd": 36000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.2,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_q45_2024",
+    "brand": "Infiniti",
+    "model": "Q45 2024",
+    "type": "Sedan",
+    "price_usd": 50000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "comfortable",
+      "powerful"
+    ],
+    "rating": 4.2,
+    "popularity": 0.18,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_q50_red_sport_2024",
+    "brand": "Infiniti",
+    "model": "Q50 Red Sport 2024",
+    "type": "Sedan",
+    "price_usd": 58000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_qx70_2024",
+    "brand": "Infiniti",
+    "model": "QX70 2024",
+    "type": "SUV",
+    "price_usd": 60000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "offroad"
+    ],
+    "highlights": [
+      "sporty",
+      "rugged",
+      "luxurious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.22,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "infiniti_q60_red_sport_2024",
+    "brand": "Infiniti",
+    "model": "Q60 Red Sport 2024",
+    "type": "Coupe",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_corsair_2024",
+    "brand": "Lincoln",
+    "model": "Corsair 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "luxurious",
+      "compact",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_nautilus_2024",
+    "brand": "Lincoln",
+    "model": "Nautilus 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "fuel_efficient"
+    ],
+    "rating": 4.4,
+    "popularity": 0.42,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_navigator_l_2024",
+    "brand": "Lincoln",
+    "model": "Navigator L 2024",
+    "type": "SUV",
+    "price_usd": 85000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "extra_spacious",
+      "powerful"
+    ],
+    "rating": 4.5,
+    "popularity": 0.38,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "lincoln_mkz_2024",
+    "brand": "Lincoln",
+    "model": "MKZ 2024",
+    "type": "Sedan",
+    "price_usd": 42000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "fuel_efficient",
+      "comfortable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_continental_2024",
+    "brand": "Lincoln",
+    "model": "Continental 2024",
+    "type": "Sedan",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "elegant"
+    ],
+    "rating": 4.3,
+    "popularity": 0.28,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_zephyr_2024",
+    "brand": "Lincoln",
+    "model": "Zephyr 2024",
+    "type": "Sedan",
+    "price_usd": 45000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business",
+      "commute"
+    ],
+    "highlights": [
+      "elegant",
+      "modern_design",
+      "luxurious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_aviator_black_label_2024",
+    "brand": "Lincoln",
+    "model": "Aviator Black Label 2024",
+    "type": "SUV",
+    "price_usd": 90000,
+    "energy": "PHEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "eco_friendly"
+    ],
+    "rating": 4.6,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_navigator_black_label_2024",
+    "brand": "Lincoln",
+    "model": "Navigator Black Label 2024",
+    "type": "SUV",
+    "price_usd": 110000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.22,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_corsair_black_label_2024",
+    "brand": "Lincoln",
+    "model": "Corsair Black Label 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "compact",
+      "elegant"
+    ],
+    "rating": 4.4,
+    "popularity": 0.2,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lincoln_nautilus_black_label_2024",
+    "brand": "Lincoln",
+    "model": "Nautilus Black Label 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "fuel_efficient"
+    ],
+    "rating": 4.5,
+    "popularity": 0.18,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_xt4_2024",
+    "brand": "Cadillac",
+    "model": "XT4 2024",
+    "type": "SUV",
+    "price_usd": 38000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "city",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_xt5_2024",
+    "brand": "Cadillac",
+    "model": "XT5 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.45,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_xt6_2024",
+    "brand": "Cadillac",
+    "model": "XT6 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "luxury",
+      "family"
+    ]
+  },
+  {
+    "id": "cadillac_ct4_2024",
+    "brand": "Cadillac",
+    "model": "CT4 2024",
+    "type": "Sedan",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "sporty",
+      "compact",
+      "luxurious"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_ct4_v_2024",
+    "brand": "Cadillac",
+    "model": "CT4-V 2024",
+    "type": "Sedan",
+    "price_usd": 48000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_ct5_v_2024",
+    "brand": "Cadillac",
+    "model": "CT5-V 2024",
+    "type": "Sedan",
+    "price_usd": 53000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.32,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "cadillac_escalade_v_2024",
+    "brand": "Cadillac",
+    "model": "Escalade-V 2024",
+    "type": "SUV",
+    "price_usd": 150000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "ultra_luxurious",
+      "powerful"
+    ],
+    "rating": 4.7,
+    "popularity": 0.3,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "cadillac_celestiq_2024",
+    "brand": "Cadillac",
+    "model": "Celestiq 2024",
+    "type": "Sedan",
+    "price_usd": 340000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "handcrafted",
+      "tech_loaded"
+    ],
+    "rating": 4.8,
+    "popularity": 0.2,
+    "tags": [
+      "luxury",
+      "ev"
+    ]
+  },
+  {
+    "id": "cadillac_srx_2024",
+    "brand": "Cadillac",
+    "model": "SRX 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.1,
+    "popularity": 0.22,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "byd_yuan_plus_2024",
+    "brand": "BYD",
+    "model": "Yuan Plus EV 2024",
+    "type": "SUV",
+    "price_usd": 22000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.48,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "byd_qin_plus_2024",
+    "brand": "BYD",
+    "model": "Qin Plus EV 2024",
+    "type": "Sedan",
+    "price_usd": 20000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "family",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "fuel_efficient",
+      "spacious"
+    ],
+    "rating": 4.0,
+    "popularity": 0.5,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "byd_song_pro_2024",
+    "brand": "BYD",
+    "model": "Song Pro EV 2024",
+    "type": "SUV",
+    "price_usd": 24000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.42,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "byd_denza_n7_2024",
+    "brand": "BYD",
+    "model": "Denza N7 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "tech",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.3,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "byd_denza_z9_2024",
+    "brand": "BYD",
+    "model": "Denza Z9 2024",
+    "type": "Sedan",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business",
+      "tech"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "sporty"
+    ],
+    "rating": 4.4,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "nio_es7_2024",
+    "brand": "NIO",
+    "model": "ES7 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "swappable_battery",
+      "spacious",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "nio_et5t_2024",
+    "brand": "NIO",
+    "model": "ET5T 2024",
+    "type": "Wagon",
+    "price_usd": 40000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "family",
+      "sport",
+      "eco"
+    ],
+    "highlights": [
+      "swappable_battery",
+      "sporty",
+      "practical"
+    ],
+    "rating": 4.3,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "nio_ec7_2024",
+    "brand": "NIO",
+    "model": "EC7 2024",
+    "type": "SUV",
+    "price_usd": 52000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "eco"
+    ],
+    "highlights": [
+      "swappable_battery",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "nio_et9_2024",
+    "brand": "NIO",
+    "model": "ET9 2024",
+    "type": "Sedan",
+    "price_usd": 90000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.6,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "nio_l6_2024",
+    "brand": "NIO",
+    "model": "L6 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "tech_loaded"
+    ],
+    "rating": 4.2,
+    "popularity": 0.38,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "xpeng_p7i_2024",
+    "brand": "Xpeng",
+    "model": "P7i 2024",
+    "type": "Sedan",
+    "price_usd": 36000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "tech",
+      "sport",
+      "eco"
+    ],
+    "highlights": [
+      "autonomous_tech",
+      "fast",
+      "sporty"
+    ],
+    "rating": 4.3,
+    "popularity": 0.32,
+    "tags": [
+      "ev",
+      "tech"
+    ]
+  },
+  {
+    "id": "xpeng_g3_2024",
+    "brand": "Xpeng",
+    "model": "G3 2024",
+    "type": "SUV",
+    "price_usd": 28000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "tech_loaded"
+    ],
+    "rating": 4.1,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "xpeng_x9_2024",
+    "brand": "Xpeng",
+    "model": "X9 2024",
+    "type": "MPV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "MPV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "tech_loaded"
+    ],
+    "rating": 4.4,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "xpeng_mona_m03_2024",
+    "brand": "Xpeng",
+    "model": "Mona M03 2024",
+    "type": "Sedan",
+    "price_usd": 18000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "commute",
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "tech_loaded"
+    ],
+    "rating": 4.0,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "xpeng_g9_performance_2024",
+    "brand": "Xpeng",
+    "model": "G9 Performance 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "tech"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "autonomous_tech"
+    ],
+    "rating": 4.5,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "xpeng_eva_2024",
+    "brand": "Xpeng",
+    "model": "EVA 2024",
+    "type": "Coupe",
+    "price_usd": 40000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "tech",
+      "eco"
+    ],
+    "highlights": [
+      "fast",
+      "autonomous_tech",
+      "sporty"
+    ],
+    "rating": 4.2,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "tech"
+    ]
+  },
+  {
+    "id": "li_auto_l9_pro_2024",
+    "brand": "Li Auto",
+    "model": "L9 Pro 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "PHEV",
+    "seats": 6,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "no_range_anxiety"
+    ],
+    "rating": 4.6,
+    "popularity": 0.4,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "li_auto_l8_max_2024",
+    "brand": "Li Auto",
+    "model": "L8 Max 2024",
+    "type": "SUV",
+    "price_usd": 58000,
+    "energy": "PHEV",
+    "seats": 6,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "tech_loaded"
+    ],
+    "rating": 4.5,
+    "popularity": 0.38,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "li_auto_l7_pro_2024",
+    "brand": "Li Auto",
+    "model": "L7 Pro 2024",
+    "type": "SUV",
+    "price_usd": 48000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "no_range_anxiety"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "li_auto_l6_max_2024",
+    "brand": "Li Auto",
+    "model": "L6 Max 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "tech"
+    ],
+    "highlights": [
+      "affordable",
+      "spacious",
+      "tech_loaded"
+    ],
+    "rating": 4.3,
+    "popularity": 0.36,
+    "tags": [
+      "family",
+      "value"
+    ]
+  },
+  {
+    "id": "li_auto_mega_2024",
+    "brand": "Li Auto",
+    "model": "Mega 2024",
+    "type": "MPV",
+    "price_usd": 70000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "MPV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "long_range"
+    ],
+    "rating": 4.5,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "li_auto_i8_2024",
+    "brand": "Li Auto",
+    "model": "i8 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "PHEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "spacious",
+      "comfortable",
+      "no_range_anxiety"
+    ],
+    "rating": 4.3,
+    "popularity": 0.28,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "vinfast_vf6_2024",
+    "brand": "VinFast",
+    "model": "VF6 2024",
+    "type": "SUV",
+    "price_usd": 30000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "spacious",
+      "practical"
+    ],
+    "rating": 4.1,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "vinfast_vf7_2024",
+    "brand": "VinFast",
+    "model": "VF7 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "luxurious",
+      "spacious",
+      "eco_friendly"
+    ],
+    "rating": 4.2,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "vinfast_vf5_2024",
+    "brand": "VinFast",
+    "model": "VF5 2024",
+    "type": "SUV",
+    "price_usd": 25000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "commute",
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "practical"
+    ],
+    "rating": 4.0,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "vinfast_vf3_2024",
+    "brand": "VinFast",
+    "model": "VF3 2024",
+    "type": "Hatchback",
+    "price_usd": 20000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "city",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "practical"
+    ],
+    "rating": 3.9,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "vinfast_president_2024",
+    "brand": "VinFast",
+    "model": "President 2024",
+    "type": "Sedan",
+    "price_usd": 80000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "powerful",
+      "elegant"
+    ],
+    "rating": 4.3,
+    "popularity": 0.15,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "vinfast_wild_2024",
+    "brand": "VinFast",
+    "model": "Wild 2024",
+    "type": "Pickup",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "offroad",
+      "eco"
+    ],
+    "highlights": [
+      "rugged",
+      "eco_friendly",
+      "powerful"
+    ],
+    "rating": 4.2,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "utility"
+    ]
+  },
+  {
+    "id": "fisker_pear_2024",
+    "brand": "Fisker",
+    "model": "Pear 2024",
+    "type": "Hatchback",
+    "price_usd": 30000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "city",
+      "commute",
+      "eco"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "unique_design"
+    ],
+    "rating": 4.0,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "value"
+    ]
+  },
+  {
+    "id": "fisker_alaska_2024",
+    "brand": "Fisker",
+    "model": "Alaska 2024",
+    "type": "Pickup",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "utility",
+      "outdoor",
+      "eco"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "rugged",
+      "spacious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "utility"
+    ]
+  },
+  {
+    "id": "fisker_ronin_2024",
+    "brand": "Fisker",
+    "model": "Ronin 2024",
+    "type": "Convertible",
+    "price_usd": 200000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "open_air"
+    ],
+    "rating": 4.5,
+    "popularity": 0.15,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "fisker_ocean_extreme_2024",
+    "brand": "Fisker",
+    "model": "Ocean Extreme 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "long_range",
+      "luxurious",
+      "eco_friendly"
+    ],
+    "rating": 4.2,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "fisker_ocean_sport_2024",
+    "brand": "Fisker",
+    "model": "Ocean Sport 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "eco",
+      "sport"
+    ],
+    "highlights": [
+      "sporty",
+      "eco_friendly",
+      "spacious"
+    ],
+    "rating": 4.1,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "lucid_air_pure_2024",
+    "brand": "Lucid",
+    "model": "Air Pure 2024",
+    "type": "Sedan",
+    "price_usd": 70000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "tech_loaded"
+    ],
+    "rating": 4.5,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lucid_air_touring_2024",
+    "brand": "Lucid",
+    "model": "Air Touring 2024",
+    "type": "Sedan",
+    "price_usd": 80000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "luxurious",
+      "long_range",
+      "fast"
+    ],
+    "rating": 4.6,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lucid_air_grand_touring_2024",
+    "brand": "Lucid",
+    "model": "Air Grand Touring 2024",
+    "type": "Sedan",
+    "price_usd": 95000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "longest_range",
+      "fast"
+    ],
+    "rating": 4.7,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lucid_air_sapphire_2024",
+    "brand": "Lucid",
+    "model": "Air Sapphire 2024",
+    "type": "Sedan",
+    "price_usd": 250000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "ultra_luxurious",
+      "track_ready"
+    ],
+    "rating": 4.9,
+    "popularity": 0.15,
+    "tags": [
+      "ev",
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lucid_gravity_touring_2024",
+    "brand": "Lucid",
+    "model": "Gravity Touring 2024",
+    "type": "SUV",
+    "price_usd": 80000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "long_range"
+    ],
+    "rating": 4.6,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lucid_gravity_grand_touring_2024",
+    "brand": "Lucid",
+    "model": "Gravity Grand Touring 2024",
+    "type": "SUV",
+    "price_usd": 95000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "eco"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "longest_range"
+    ],
+    "rating": 4.7,
+    "popularity": 0.16,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_812_2024",
+    "brand": "Ferrari",
+    "model": "812 Competitor 2024",
+    "type": "Coupe",
+    "price_usd": 350000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "exotic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_purosangue_2024",
+    "brand": "Ferrari",
+    "model": "Purosangue 2024",
+    "type": "SUV",
+    "price_usd": 400000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "luxurious"
+    ],
+    "rating": 4.7,
+    "popularity": 0.35,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "ferrari_812_gts_2024",
+    "brand": "Ferrari",
+    "model": "812 GTS 2024",
+    "type": "Convertible",
+    "price_usd": 420000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "open_top"
+    ],
+    "rating": 4.9,
+    "popularity": 0.28,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "ferrari_roma_spider_2024",
+    "brand": "Ferrari",
+    "model": "Roma Spider 2024",
+    "type": "Convertible",
+    "price_usd": 270000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "open_top",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.25,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "ferrari_12cilindri_2024",
+    "brand": "Ferrari",
+    "model": "12Cilindri 2024",
+    "type": "Coupe",
+    "price_usd": 340000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "iconic",
+      "track_ready"
+    ],
+    "rating": 4.9,
+    "popularity": 0.25,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_aventador_2024",
+    "brand": "Lamborghini",
+    "model": "Aventador 2024",
+    "type": "Coupe",
+    "price_usd": 500000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "iconic"
+    ],
+    "rating": 4.8,
+    "popularity": 0.45,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_huracan_sto_2024",
+    "brand": "Lamborghini",
+    "model": "Huracan STO 2024",
+    "type": "Coupe",
+    "price_usd": 330000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "lightweight"
+    ],
+    "rating": 4.9,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "lamborghini_huracan_tecnica_2024",
+    "brand": "Lamborghini",
+    "model": "Huracan Tecnica 2024",
+    "type": "Coupe",
+    "price_usd": 240000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "precise_handling",
+      "sporty"
+    ],
+    "rating": 4.8,
+    "popularity": 0.32,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_urus_performante_2024",
+    "brand": "Lamborghini",
+    "model": "Urus Performante 2024",
+    "type": "SUV",
+    "price_usd": 260000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "exotic",
+      "spacious"
+    ],
+    "rating": 4.8,
+    "popularity": 0.4,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lamborghini_temerario_2024",
+    "brand": "Lamborghini",
+    "model": "Temerario 2024",
+    "type": "Coupe",
+    "price_usd": 290000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "exotic"
+    ],
+    "rating": 4.8,
+    "popularity": 0.28,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mclaren_720s_2024",
+    "brand": "McLaren",
+    "model": "720S 2024",
+    "type": "Coupe",
+    "price_usd": 300000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "lightweight",
+      "track_ready"
+    ],
+    "rating": 4.8,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "mclaren_765lt_2024",
+    "brand": "McLaren",
+    "model": "765LT 2024",
+    "type": "Coupe",
+    "price_usd": 400000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "lightweight",
+      "track_ready"
+    ],
+    "rating": 4.9,
+    "popularity": 0.2,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "mclaren_gt_2024",
+    "brand": "McLaren",
+    "model": "GT 2024",
+    "type": "Coupe",
+    "price_usd": 210000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.5,
+    "popularity": 0.25,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "mclaren_750s_spider_2024",
+    "brand": "McLaren",
+    "model": "750S Spider 2024",
+    "type": "Convertible",
+    "price_usd": 330000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "open_top",
+      "lightweight"
+    ],
+    "rating": 4.8,
+    "popularity": 0.22,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "mclaren_600lt_2024",
+    "brand": "McLaren",
+    "model": "600LT 2024",
+    "type": "Coupe",
+    "price_usd": 240000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "lightweight",
+      "track_ready"
+    ],
+    "rating": 4.7,
+    "popularity": 0.2,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "mclaren_senna_2024",
+    "brand": "McLaren",
+    "model": "Senna 2024",
+    "type": "Coupe",
+    "price_usd": 960000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "exotic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.15,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "astonmartin_dbs_2024",
+    "brand": "Aston Martin",
+    "model": "DBS 2024",
+    "type": "Coupe",
+    "price_usd": 330000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "ultra_luxurious",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.25,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "astonmartin_vantage_v12_2024",
+    "brand": "Aston Martin",
+    "model": "Vantage V12 2024",
+    "type": "Coupe",
+    "price_usd": 290000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "exotic"
+    ],
+    "rating": 4.8,
+    "popularity": 0.22,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "astonmartin_valhalla_2024",
+    "brand": "Aston Martin",
+    "model": "Valhalla 2024",
+    "type": "Coupe",
+    "price_usd": 400000,
+    "energy": "PHEV",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend",
+      "luxury"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "hybrid_power",
+      "track_ready"
+    ],
+    "rating": 4.8,
+    "popularity": 0.18,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "astonmartin_valkyrie_2024",
+    "brand": "Aston Martin",
+    "model": "Valkyrie 2024",
+    "type": "Coupe",
+    "price_usd": 3000000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "track_ready",
+      "exotic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.12,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "astonmartin_dbx707_2024",
+    "brand": "Aston Martin",
+    "model": "DBX707 2024",
+    "type": "SUV",
+    "price_usd": 210000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "spacious",
+      "luxurious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.3,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "maserati_ghibli_2024",
+    "brand": "Maserati",
+    "model": "Ghibli 2024",
+    "type": "Sedan",
+    "price_usd": 80000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "sporty",
+      "italian_design"
+    ],
+    "rating": 4.3,
+    "popularity": 0.3,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "maserati_quattroporte_2024",
+    "brand": "Maserati",
+    "model": "Quattroporte 2024",
+    "type": "Sedan",
+    "price_usd": 110000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "italian_design"
+    ],
+    "rating": 4.4,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "maserati_granturismo_2024",
+    "brand": "Maserati",
+    "model": "GranTurismo 2024",
+    "type": "Coupe",
+    "price_usd": 170000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "sporty",
+      "italian_design"
+    ],
+    "rating": 4.6,
+    "popularity": 0.28,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "maserati_mc20_cielo_2024",
+    "brand": "Maserati",
+    "model": "MC20 Cielo 2024",
+    "type": "Convertible",
+    "price_usd": 250000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "open_top",
+      "exotic"
+    ],
+    "rating": 4.8,
+    "popularity": 0.2,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "maserati_grecale_trofeo_2024",
+    "brand": "Maserati",
+    "model": "Grecale Trofeo 2024",
+    "type": "SUV",
+    "price_usd": 80000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.25,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "bentley_flying_spur_2024",
+    "brand": "Bentley",
+    "model": "Flying Spur 2024",
+    "type": "Sedan",
+    "price_usd": 230000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.7,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bentley_continental_gtc_2024",
+    "brand": "Bentley",
+    "model": "Continental GTC 2024",
+    "type": "Convertible",
+    "price_usd": 270000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "open_top",
+      "powerful"
+    ],
+    "rating": 4.8,
+    "popularity": 0.32,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "bentley_bentayga_ewb_2024",
+    "brand": "Bentley",
+    "model": "Bentayga EWB 2024",
+    "type": "SUV",
+    "price_usd": 240000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "comfortable"
+    ],
+    "rating": 4.7,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "bentley_bacalar_2024",
+    "brand": "Bentley",
+    "model": "Bacalar 2024",
+    "type": "Convertible",
+    "price_usd": 1800000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "exotic",
+      "handcrafted"
+    ],
+    "rating": 4.8,
+    "popularity": 0.1,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "bentley_bentayga_speed_2024",
+    "brand": "Bentley",
+    "model": "Bentayga Speed 2024",
+    "type": "SUV",
+    "price_usd": 230000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.7,
+    "popularity": 0.22,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "bentley_mulliner_2024",
+    "brand": "Bentley",
+    "model": "Mulliner 2024",
+    "type": "Sedan",
+    "price_usd": 320000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "handcrafted",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.18,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "rollsroyce_ghost_2024",
+    "brand": "Rolls-Royce",
+    "model": "Ghost 2024",
+    "type": "Sedan",
+    "price_usd": 350000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "quiet",
+      "handcrafted"
+    ],
+    "rating": 4.8,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "rollsroyce_spectre_2024",
+    "brand": "Rolls-Royce",
+    "model": "Spectre 2024",
+    "type": "Coupe",
+    "price_usd": 420000,
+    "energy": "BEV",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "eco_friendly",
+      "quiet"
+    ],
+    "rating": 4.7,
+    "popularity": 0.2,
+    "tags": [
+      "luxury",
+      "ev"
+    ]
+  },
+  {
+    "id": "rollsroyce_wraith_2024",
+    "brand": "Rolls-Royce",
+    "model": "Wraith 2024",
+    "type": "Coupe",
+    "price_usd": 350000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "powerful",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.22,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "rollsroyce_dawn_2024",
+    "brand": "Rolls-Royce",
+    "model": "Dawn 2024",
+    "type": "Convertible",
+    "price_usd": 360000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "open_top",
+      "elegant"
+    ],
+    "rating": 4.8,
+    "popularity": 0.18,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "rollsroyce_cullinan_black_badge_2024",
+    "brand": "Rolls-Royce",
+    "model": "Cullinan Black Badge 2024",
+    "type": "SUV",
+    "price_usd": 400000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family",
+      "offroad"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "spacious",
+      "powerful"
+    ],
+    "rating": 4.8,
+    "popularity": 0.25,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "rollsroyce_boat_tail_2024",
+    "brand": "Rolls-Royce",
+    "model": "Boat Tail 2024",
+    "type": "Convertible",
+    "price_usd": 28000000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "handcrafted",
+      "iconic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.08,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "volvo_c40_2024",
+    "brand": "Volvo",
+    "model": "C40 Recharge 2024",
+    "type": "SUV",
+    "price_usd": 53000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "eco_friendly",
+      "safe"
+    ],
+    "rating": 4.2,
+    "popularity": 0.35,
+    "tags": [
+      "ev",
+      "eco"
+    ]
+  },
+  {
+    "id": "volvo_v90_2024",
+    "brand": "Volvo",
+    "model": "V90 Cross Country 2024",
+    "type": "Wagon",
+    "price_usd": 52000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "family",
+      "outdoor"
+    ],
+    "highlights": [
+      "spacious",
+      "safe",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "volvo_s60_2024",
+    "brand": "Volvo",
+    "model": "S60 2024",
+    "type": "Sedan",
+    "price_usd": 43000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "business",
+      "luxury"
+    ],
+    "highlights": [
+      "luxurious",
+      "safe",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "volvo_xc90_recharge_2024",
+    "brand": "Volvo",
+    "model": "XC90 Recharge 2024",
+    "type": "SUV",
+    "price_usd": 72000,
+    "energy": "PHEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "safe",
+      "luxurious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.32,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "porsche_cayenne_coupe_2024",
+    "brand": "Porsche",
+    "model": "Cayenne Coupe 2024",
+    "type": "SUV",
+    "price_usd": 85000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.5,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_macan_ev_2024",
+    "brand": "Porsche",
+    "model": "Macan EV 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "eco",
+      "luxury"
+    ],
+    "highlights": [
+      "fast",
+      "eco_friendly",
+      "sporty"
+    ],
+    "rating": 4.4,
+    "popularity": 0.4,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_panamera_gts_2024",
+    "brand": "Porsche",
+    "model": "Panamera GTS 2024",
+    "type": "Sedan",
+    "price_usd": 155000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "sporty"
+    ],
+    "rating": 4.7,
+    "popularity": 0.28,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "porsche_911_gt3_2024",
+    "brand": "Porsche",
+    "model": "911 GT3 2024",
+    "type": "Coupe",
+    "price_usd": 180000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "track_ready",
+      "ultra_fast",
+      "precise_handling"
+    ],
+    "rating": 4.9,
+    "popularity": 0.35,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "porsche_911_turbo_s_2024",
+    "brand": "Porsche",
+    "model": "911 Turbo S 2024",
+    "type": "Coupe",
+    "price_usd": 230000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "iconic"
+    ],
+    "rating": 4.9,
+    "popularity": 0.38,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_ux_2024",
+    "brand": "Lexus",
+    "model": "UX 2024",
+    "type": "SUV",
+    "price_usd": 37000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute",
+      "luxury"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "fuel_efficient"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_rx500h_2024",
+    "brand": "Lexus",
+    "model": "RX 500h 2024",
+    "type": "SUV",
+    "price_usd": 63000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "sport"
+    ],
+    "highlights": [
+      "fast",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.42,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_tx_2024",
+    "brand": "Lexus",
+    "model": "TX 2024",
+    "type": "SUV",
+    "price_usd": 55000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "road_trip"
+    ],
+    "highlights": [
+      "spacious",
+      "luxurious",
+      "comfortable"
+    ],
+    "rating": 4.3,
+    "popularity": 0.3,
+    "tags": [
+      "family",
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_lm_2024",
+    "brand": "Lexus",
+    "model": "LM 2024",
+    "type": "MPV",
+    "price_usd": 90000,
+    "energy": "Hybrid",
+    "seats": 4,
+    "body": "MPV",
+    "use_cases": [
+      "luxury",
+      "business"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "quiet",
+      "spacious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.15,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "lexus_lc_2024",
+    "brand": "Lexus",
+    "model": "LC 2024",
+    "type": "Coupe",
+    "price_usd": 98000,
+    "energy": "Hybrid",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "beautiful_design",
+      "fast"
+    ],
+    "rating": 4.6,
+    "popularity": 0.25,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "lexus_gx_2024",
+    "brand": "Lexus",
+    "model": "GX 2024",
+    "type": "SUV",
+    "price_usd": 65000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "rugged",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "mazda_cx50_2024",
+    "brand": "Mazda",
+    "model": "CX-50 2024",
+    "type": "SUV",
+    "price_usd": 29000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "outdoor",
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "rugged",
+      "fun_to_drive",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.45,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "mazda_cx90_2024",
+    "brand": "Mazda",
+    "model": "CX-90 2024",
+    "type": "SUV",
+    "price_usd": 40000,
+    "energy": "Hybrid",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "premium_feel",
+      "powerful"
+    ],
+    "rating": 4.5,
+    "popularity": 0.4,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "mazda_cx70_2024",
+    "brand": "Mazda",
+    "model": "CX-70 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "outdoor",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "premium_feel",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.32,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "mazda_mazda6_2024",
+    "brand": "Mazda",
+    "model": "Mazda6 2024",
+    "type": "Sedan",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "business"
+    ],
+    "highlights": [
+      "luxurious",
+      "fun_to_drive",
+      "spacious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.38,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "subaru_legacy_2024",
+    "brand": "Subaru",
+    "model": "Legacy 2024",
+    "type": "Sedan",
+    "price_usd": 25000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "safe",
+      "spacious",
+      "awd"
+    ],
+    "rating": 4.2,
+    "popularity": 0.4,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "subaru_solterra_2024",
+    "brand": "Subaru",
+    "model": "Solterra 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "eco",
+      "family",
+      "commute"
+    ],
+    "highlights": [
+      "eco_friendly",
+      "spacious",
+      "awd"
+    ],
+    "rating": 4.1,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "eco"
+    ]
+  },
+  {
+    "id": "subaru_brz_2024",
+    "brand": "Subaru",
+    "model": "BRZ 2024",
+    "type": "Coupe",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "fun_to_drive",
+      "lightweight",
+      "sporty"
+    ],
+    "rating": 4.5,
+    "popularity": 0.4,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "subaru_impreza_2024",
+    "brand": "Subaru",
+    "model": "Impreza 2024",
+    "type": "Hatchback",
+    "price_usd": 23000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "commute",
+      "family",
+      "city"
+    ],
+    "highlights": [
+      "awd",
+      "practical",
+      "affordable"
+    ],
+    "rating": 4.2,
+    "popularity": 0.45,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "subaru_outback_wilderness_2024",
+    "brand": "Subaru",
+    "model": "Outback Wilderness 2024",
+    "type": "Wagon",
+    "price_usd": 33000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "offroad",
+      "outdoor",
+      "family"
+    ],
+    "highlights": [
+      "rugged",
+      "awd",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "offroad"
+    ]
+  },
+  {
+    "id": "genesis_gv60_2024",
+    "brand": "Genesis",
+    "model": "GV60 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "fast"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_g70_2024",
+    "brand": "Genesis",
+    "model": "G70 2024",
+    "type": "Sedan",
+    "price_usd": 40000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "value_luxury"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_gv80_l_2024",
+    "brand": "Genesis",
+    "model": "GV80 L 2024",
+    "type": "SUV",
+    "price_usd": 72000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "spacious",
+      "ultra_luxurious",
+      "comfortable"
+    ],
+    "rating": 4.6,
+    "popularity": 0.22,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_electrified_gv70_2024",
+    "brand": "Genesis",
+    "model": "Electrified GV70 2024",
+    "type": "SUV",
+    "price_usd": 68000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "spacious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "genesis_gv80_sport_2024",
+    "brand": "Genesis",
+    "model": "GV80 Sport 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "family"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "spacious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.2,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "polestar_1_2024",
+    "brand": "Polestar",
+    "model": "Polestar 1 2024",
+    "type": "Coupe",
+    "price_usd": 155000,
+    "energy": "PHEV",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "eco"
+    ],
+    "highlights": [
+      "ultra_luxurious",
+      "hybrid_power",
+      "sporty"
+    ],
+    "rating": 4.5,
+    "popularity": 0.15,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "polestar_5_2024",
+    "brand": "Polestar",
+    "model": "Polestar 5 2024",
+    "type": "Sedan",
+    "price_usd": 100000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "tech"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "luxurious",
+      "long_range"
+    ],
+    "rating": 4.5,
+    "popularity": 0.15,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "polestar_6_2024",
+    "brand": "Polestar",
+    "model": "Polestar 6 2024",
+    "type": "Convertible",
+    "price_usd": 200000,
+    "energy": "BEV",
+    "seats": 2,
+    "body": "Convertible",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "eco_friendly",
+      "beautiful_design"
+    ],
+    "rating": 4.6,
+    "popularity": 0.1,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "polestar_3_performance_2024",
+    "brand": "Polestar",
+    "model": "Polestar 3 Performance 2024",
+    "type": "SUV",
+    "price_usd": 75000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "eco"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.4,
+    "popularity": 0.18,
+    "tags": [
+      "ev",
+      "sport"
+    ]
+  },
+  {
+    "id": "polestar_2_long_range_2024",
+    "brand": "Polestar",
+    "model": "Polestar 2 Long Range 2024",
+    "type": "Sedan",
+    "price_usd": 55000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "eco",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "long_range",
+      "eco_friendly",
+      "tech_loaded"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "rivian_r1t_quad_2024",
+    "brand": "Rivian",
+    "model": "R1T Quad 2024",
+    "type": "Pickup",
+    "price_usd": 85000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "Pickup",
+    "use_cases": [
+      "offroad",
+      "utility",
+      "eco"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "adventure_ready",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.3,
+    "tags": [
+      "ev",
+      "adventure"
+    ]
+  },
+  {
+    "id": "rivian_r1s_quad_2024",
+    "brand": "Rivian",
+    "model": "R1S Quad 2024",
+    "type": "SUV",
+    "price_usd": 90000,
+    "energy": "BEV",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad",
+      "eco"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "spacious",
+      "adventure_ready"
+    ],
+    "rating": 4.6,
+    "popularity": 0.28,
+    "tags": [
+      "ev",
+      "adventure"
+    ]
+  },
+  {
+    "id": "rivian_r3_2024",
+    "brand": "Rivian",
+    "model": "R3 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "affordable_ev",
+      "compact",
+      "adventure_ready"
+    ],
+    "rating": 4.3,
+    "popularity": 0.25,
+    "tags": [
+      "ev"
+    ]
+  },
+  {
+    "id": "rivian_r3x_2024",
+    "brand": "Rivian",
+    "model": "R3X 2024",
+    "type": "SUV",
+    "price_usd": 48000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "sport",
+      "eco"
+    ],
+    "highlights": [
+      "fast",
+      "adventure_ready",
+      "sporty"
+    ],
+    "rating": 4.4,
+    "popularity": 0.22,
+    "tags": [
+      "ev",
+      "adventure"
+    ]
+  },
+  {
+    "id": "rivian_commercial_van_2024",
+    "brand": "Rivian",
+    "model": "Commercial Van 2024",
+    "type": "MPV",
+    "price_usd": 75000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "MPV",
+    "use_cases": [
+      "utility",
+      "work"
+    ],
+    "highlights": [
+      "spacious",
+      "eco_friendly",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.15,
+    "tags": [
+      "ev",
+      "utility"
+    ]
+  },
+  {
+    "id": "mini_cooper_s_2024",
+    "brand": "Mini",
+    "model": "Cooper S 2024",
+    "type": "Hatchback",
+    "price_usd": 27000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "city",
+      "commute",
+      "weekend"
+    ],
+    "highlights": [
+      "fun_to_drive",
+      "compact",
+      "sporty"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "city"
+    ]
+  },
+  {
+    "id": "mini_cooper_jcw_2024",
+    "brand": "Mini",
+    "model": "Cooper JCW 2024",
+    "type": "Hatchback",
+    "price_usd": 35000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Hatchback",
+    "use_cases": [
+      "sport",
+      "city",
+      "weekend"
+    ],
+    "highlights": [
+      "fast",
+      "sporty",
+      "fun_to_drive"
+    ],
+    "rating": 4.4,
+    "popularity": 0.3,
+    "tags": [
+      "sport"
+    ]
+  },
+  {
+    "id": "mini_clubman_2024",
+    "brand": "Mini",
+    "model": "Clubman 2024",
+    "type": "Wagon",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Wagon",
+    "use_cases": [
+      "family",
+      "city"
+    ],
+    "highlights": [
+      "spacious",
+      "practical",
+      "fun_to_drive"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "family"
+    ]
+  },
+  {
+    "id": "mini_aceman_2024",
+    "brand": "Mini",
+    "model": "Aceman 2024",
+    "type": "SUV",
+    "price_usd": 35000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "eco",
+      "commute"
+    ],
+    "highlights": [
+      "compact",
+      "eco_friendly",
+      "modern_design"
+    ],
+    "rating": 4.2,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "city"
+    ]
+  },
+  {
+    "id": "mini_countryman_se_2024",
+    "brand": "Mini",
+    "model": "Countryman SE 2024",
+    "type": "SUV",
+    "price_usd": 42000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "city",
+      "eco"
+    ],
+    "highlights": [
+      "spacious",
+      "eco_friendly",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.25,
+    "tags": [
+      "ev",
+      "family"
+    ]
+  },
+  {
+    "id": "buick_envision_2024",
+    "brand": "Buick",
+    "model": "Envision 2024",
+    "type": "SUV",
+    "price_usd": 36000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "luxurious",
+      "comfortable",
+      "quiet"
+    ],
+    "rating": 4.2,
+    "popularity": 0.32,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "buick_envista_2024",
+    "brand": "Buick",
+    "model": "Envista 2024",
+    "type": "SUV",
+    "price_usd": 30000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "commute",
+      "luxury"
+    ],
+    "highlights": [
+      "modern_design",
+      "affordable",
+      "comfortable"
+    ],
+    "rating": 4.1,
+    "popularity": 0.3,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "buick_electra_2024",
+    "brand": "Buick",
+    "model": "Electra 2024",
+    "type": "SUV",
+    "price_usd": 50000,
+    "energy": "BEV",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "eco",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "eco_friendly",
+      "spacious"
+    ],
+    "rating": 4.3,
+    "popularity": 0.2,
+    "tags": [
+      "ev",
+      "luxury"
+    ]
+  },
+  {
+    "id": "buick_wildcat_2024",
+    "brand": "Buick",
+    "model": "Wildcat 2024",
+    "type": "Coupe",
+    "price_usd": 55000,
+    "energy": "Gasoline",
+    "seats": 4,
+    "body": "Coupe",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "weekend"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "modern_design"
+    ],
+    "rating": 4.3,
+    "popularity": 0.18,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "landrover_rangerover_sport_2024",
+    "brand": "Land Rover",
+    "model": "Range Rover Sport 2024",
+    "type": "SUV",
+    "price_usd": 105000,
+    "energy": "Hybrid",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "sport",
+      "offroad"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "powerful"
+    ],
+    "rating": 4.6,
+    "popularity": 0.5,
+    "tags": [
+      "luxury",
+      "sport"
+    ]
+  },
+  {
+    "id": "landrover_evoque_2024",
+    "brand": "Land Rover",
+    "model": "Evoque 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "luxury"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "modern_design"
+    ],
+    "rating": 4.3,
+    "popularity": 0.4,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "landrover_velar_2024",
+    "brand": "Land Rover",
+    "model": "Velar 2024",
+    "type": "SUV",
+    "price_usd": 60000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "luxurious",
+      "beautiful_design",
+      "practical"
+    ],
+    "rating": 4.4,
+    "popularity": 0.35,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "landrover_discovery_sport_2024",
+    "brand": "Land Rover",
+    "model": "Discovery Sport 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "Gasoline",
+    "seats": 7,
+    "body": "SUV",
+    "use_cases": [
+      "family",
+      "offroad",
+      "outdoor"
+    ],
+    "highlights": [
+      "spacious",
+      "rugged",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.38,
+    "tags": [
+      "family",
+      "offroad"
+    ]
+  },
+  {
+    "id": "landrover_defender_130_2024",
+    "brand": "Land Rover",
+    "model": "Defender 130 2024",
+    "type": "SUV",
+    "price_usd": 70000,
+    "energy": "Gasoline",
+    "seats": 8,
+    "body": "SUV",
+    "use_cases": [
+      "offroad",
+      "family",
+      "outdoor"
+    ],
+    "highlights": [
+      "spacious",
+      "rugged",
+      "offroad_capable"
+    ],
+    "rating": 4.5,
+    "popularity": 0.42,
+    "tags": [
+      "offroad"
+    ]
+  },
+  {
+    "id": "jaguar_ftype_2024",
+    "brand": "Jaguar",
+    "model": "F-Type 2024",
+    "type": "Coupe",
+    "price_usd": 75000,
+    "energy": "Gasoline",
+    "seats": 2,
+    "body": "Coupe",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "weekend"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.6,
+    "popularity": 0.35,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "jaguar_xe_2024",
+    "brand": "Jaguar",
+    "model": "XE 2024",
+    "type": "Sedan",
+    "price_usd": 42000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "Sedan",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "commute"
+    ],
+    "highlights": [
+      "sporty",
+      "luxurious",
+      "fun_to_drive"
+    ],
+    "rating": 4.2,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
+  },
+  {
+    "id": "jaguar_epace_2024",
+    "brand": "Jaguar",
+    "model": "E-Pace 2024",
+    "type": "SUV",
+    "price_usd": 45000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "city",
+      "family",
+      "luxury"
+    ],
+    "highlights": [
+      "compact",
+      "luxurious",
+      "practical"
+    ],
+    "rating": 4.2,
+    "popularity": 0.28,
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "id": "jaguar_fpace_svr_2024",
+    "brand": "Jaguar",
+    "model": "F-Pace SVR 2024",
+    "type": "SUV",
+    "price_usd": 85000,
+    "energy": "Gasoline",
+    "seats": 5,
+    "body": "SUV",
+    "use_cases": [
+      "sport",
+      "luxury",
+      "family"
+    ],
+    "highlights": [
+      "ultra_fast",
+      "sporty",
+      "luxurious"
+    ],
+    "rating": 4.5,
+    "popularity": 0.3,
+    "tags": [
+      "sport",
+      "luxury"
+    ]
   }
 ]

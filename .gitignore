@@ -29,6 +29,11 @@ data/raw/*
 models/*.pt
 models/*.pkl
 !models/.gitkeep
+# The three fitted rankers are small (~1 MB total) and ship with the app so the
+# deployed service loads trained files instead of refitting on every cold start.
+!models/naive_popularity.pkl
+!models/classical_rule_scorer.pkl
+!models/smart_rag_ranker.pkl
 
 notebooks/*
 !notebooks/.gitkeep
