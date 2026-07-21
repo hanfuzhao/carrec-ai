@@ -110,38 +110,65 @@ def parse_user_query(query: str) -> Dict:
     }
 
 
-def score_car(car: Dict, prefs: Dict) -> float:
+# Scoring weights. These are the parameters the trained ranker files in models/
+# carry, so inference loads them from disk rather than hard-coding them here.
+# The defaults below reproduce the original behaviour exactly.
+DEFAULT_WEIGHTS = {
+    "use_case_match": 3.0,
+    "energy_match": 5.0,
+    "body_match": 4.0,
+    "seats_match": 3.0,
+    "rating_factor": 0.5,
+    "budget_under_50pct": 1.0,
+    "budget_50_to_80pct": 2.0,
+    "budget_80_to_100pct": 1.5,
+    "niche_brand_boost": 1.5,
+    "diversity_brand_penalty": 2.0,
+    "diversity_type_penalty": 1.0,
+}
+
+ACTIVE_WEIGHTS = dict(DEFAULT_WEIGHTS)
+
+
+def set_weights(weights: Dict) -> None:
+    """Install the weights loaded from a trained model file in models/."""
+    global ACTIVE_WEIGHTS
+    ACTIVE_WEIGHTS = {**DEFAULT_WEIGHTS, **(weights or {})}
+
+
+def score_car(car: Dict, prefs: Dict, weights: Dict = None) -> float:
     """Score a car's relevance to user preferences.
 
     Combines use-case match, energy/body preferences, rating,
     and a fairness boost for niche brands.
     """
+    w = weights or ACTIVE_WEIGHTS
     score = 0.0
 
     use_case_overlap = len(set(car["use_cases"]) & set(prefs["use_cases"]))
-    score += use_case_overlap * 3.0
+    score += use_case_overlap * w["use_case_match"]
 
     if prefs["energy_prefs"] and car["energy"] in prefs["energy_prefs"]:
-        score += 5.0
+        score += w["energy_match"]
 
     if prefs["body_prefs"] and car["body"] in prefs["body_prefs"]:
-        score += 4.0
+        score += w["body_match"]
 
     if prefs["seats_needed"] and car["seats"] >= prefs["seats_needed"]:
-        score += 3.0
+        score += w["seats_match"]
 
-    score += car["rating"] * 0.5
+    score += car["rating"] * w["rating_factor"]
 
     budget_utilization = car["price_usd"] / prefs["budget"]
     if budget_utilization < 0.5:
-        score += 1.0
+        score += w["budget_under_50pct"]
     elif budget_utilization < 0.8:
-        score += 2.0
+        score += w["budget_50_to_80pct"]
     elif budget_utilization <= 1.0:
-        score += 1.5
+        score += w["budget_80_to_100pct"]
 
     if car["brand"] in NICHE_BRANDS:
-        score += 1.5
+        score += w["niche_brand_boost"]
 
     return score
 
@@ -167,7 +194,10 @@ def enforce_diversity(candidates: List[Dict], top_k: int = 5) -> List[Dict]:
         for car in remaining:
             b = car["brand"]
             t = car["type"]
-            car["_diversity_penalty"] = brand_counts.get(b, 0) * 2.0 + type_counts.get(t, 0) * 1.0
+            car["_diversity_penalty"] = (
+                brand_counts.get(b, 0) * ACTIVE_WEIGHTS["diversity_brand_penalty"]
+                + type_counts.get(t, 0) * ACTIVE_WEIGHTS["diversity_type_penalty"]
+            )
 
         remaining.sort(key=lambda c: (c.get("_score", 0) - c.get("_diversity_penalty", 0)), reverse=True)
         best = remaining.pop(0)

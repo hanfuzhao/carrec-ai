@@ -28,10 +28,16 @@ from scripts.car_data import (
     get_brand_stats,
     get_catalog,
 )
+from scripts.model import load_all
 from scripts.recommender import compare_modes, recommend, recommend_from_filters
 
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
+
+# Load the three trained rankers from models/ once at startup. This also installs
+# the smart ranker's scoring weights, so every request is scored with parameters
+# read from the model files rather than constants in the code.
+MODELS = load_all()
 
 
 @app.route("/")
@@ -42,11 +48,13 @@ def index():
 
 @app.route("/health")
 def health():
-    """Return service health and catalog size for monitoring."""
+    """Return service health, catalog size, and the loaded models."""
     return jsonify({
         "status": "healthy",
         "catalog_size": len(CAR_CATALOG),
         "brands": len(MAINSTREAM_BRANDS) + len(NICHE_BRANDS),
+        "models_loaded": len(MODELS),
+        "models": {mode: m.describe() for mode, m in MODELS.items()},
     })
 
 

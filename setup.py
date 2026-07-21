@@ -16,7 +16,7 @@ from pathlib import Path
 
 def build_data():
     """Generate processed car catalog from source data."""
-    print("[1/3] Building car catalog...")
+    print("[1/4] Building car catalog...")
     from scripts.car_data import save_catalog, get_brand_stats
 
     output = Path(__file__).parent / "data" / "processed" / "cars.json"
@@ -29,9 +29,18 @@ def build_data():
     print(f"  Brands: {len(brands)} ({mainstream} mainstream, {niche} niche)")
 
 
+def build_models():
+    """Fit the three rankers and save one model file each into models/."""
+    print("[2/4] Fitting recommendation models...")
+    from scripts.model import build_all
+
+    built = build_all()
+    print(f"  Saved {len(built)} models to models/")
+
+
 def run_evaluation():
     """Run the evaluation harness and generate metrics/plots."""
-    print("[2/3] Running evaluation...")
+    print("[3/4] Running evaluation...")
     from scripts.evaluator import run_evaluation, save_results, plot_comparison
 
     result = run_evaluation(top_k=5)
@@ -54,16 +63,21 @@ def run_evaluation():
 
 def verify_app():
     """Verify the Flask app can start."""
-    print("[3/3] Verifying installation...")
+    print("[4/4] Verifying installation...")
     try:
         from scripts.car_data import CAR_CATALOG
+        from scripts.model import load_all
         from scripts.recommender import recommend
+
+        models = load_all()
+        assert len(models) == 3, "expected three trained models in models/"
 
         result = recommend("family SUV under $50k", mode="smart", top_k=3)
         assert len(result["recommendations"]) > 0
         assert result["metrics"]["budget_compliance"] == 1.0
 
         print(f"  Catalog: {len(CAR_CATALOG)} cars loaded")
+        print(f"  Models loaded: {', '.join(m.name for m in models.values())}")
         print(f"  Test query: '{result['query']}'")
         print(f"  Recommendations: {len(result['recommendations'])}")
         print(f"  Budget compliance: {result['metrics']['budget_compliance']}")
@@ -78,6 +92,7 @@ if __name__ == "__main__":
     os.chdir(str(base))
 
     build_data()
+    build_models()
     run_evaluation()
     verify_app()
 
